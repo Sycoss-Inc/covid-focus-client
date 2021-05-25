@@ -1,9 +1,10 @@
 import React from "react";
+import Layout from "../components/layout.component";
 
 export default function covid() {
   return (
-    <div>
-      <h1>Helo Covid</h1>
-    </div>
+    <Layout title="Covid">
+      <div>Ivde covid</div>
+    </Layout>
   );
 }
