@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
-import Header from "./header.component";
-import Footer from "./footer.component";
+import Header from "./header";
+import Footer from "./footer";
 
 function Layout(props) {
   return (
