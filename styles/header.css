@@ -1,0 +1,32 @@
+.header-image {
+  position: relative;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/headimage.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: auto 50%;
+}
+
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.page-heading {
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+@media only screen and (min-width: 560px) {
+  .header-image {
+    height: 47vh;
+  }
+}

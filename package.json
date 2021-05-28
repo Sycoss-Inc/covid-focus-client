@@ -1,5 +1,5 @@
 {
-  "name": "covid-focus-client",
+  "name": "app1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,28 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.2.2",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "next": "10.2.3",
+    "popper.js": "^1.16.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+    "react-bootstrap": "^1.6.0",
+    "react-charts": "^2.0.0-beta.7",
+    "react-dom": "17.0.2",
+    "react-google-charts": "^3.0.15",
+    "react-icons": "^4.2.0"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navneethvariar14/covid-focus-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/navneethvariar14/covid-focus-frontend/issues"
+  },
+  "homepage": "https://github.com/navneethvariar14/covid-focus-frontend#readme",
+  "devDependencies": {}
 }

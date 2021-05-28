@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #93b3f0;
+}
+
+.footer a {
+  color: #424642;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.address-holder {
+  text-align: left;
+}
