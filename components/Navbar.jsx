@@ -4,6 +4,7 @@ import { HiMenu, HiSearch } from "react-icons/hi";
 
 export default function Navbar({ title }) {
   const [sideBar, setSidebar] = useState(false);
+  const [currentRoute, setCurrentRoute] = useState("");
 
   const navLinks = [
     { pageName: "Home", route: "/", classname: "Dashboard" },
@@ -45,21 +46,33 @@ export default function Navbar({ title }) {
 
   function NavOptions() {
     return navLinks.map((link, index) => (
-      <li class="nav-item" key={index}>
-        <Link href={link.route}>
-          <a class={`nav-link active ${link.classname}`} aria-current="page">
-            {link.pageName}
-          </a>
-        </Link>
+      <li className="nav-item" key={index}>
+        {currentRoute === link.route ? (
+          <Link href={link.route}>
+            <a
+              className={`nav-link ${link.classname}`}
+              style={{ color: "white" }}
+              aria-current="page"
+            >
+              {link.pageName}
+            </a>
+          </Link>
+        ) : (
+          <Link href={link.route}>
+            <a className={`nav-link ${link.classname}`} aria-current="page">
+              {link.pageName}
+            </a>
+          </Link>
+        )}
       </li>
     ));
   }
 
   function Dropdown() {
     return drops.map((drop, index) => (
-      <li class="nav-item dropdown" key={index}>
+      <li className="nav-item dropdown" key={index}>
         <a
-          class="nav-link dropdown-toggle"
+          className="nav-link dropdown-toggle"
           href="#"
           id="navbarDropdown"
           role="button"
@@ -68,7 +81,7 @@ export default function Navbar({ title }) {
         >
           {drop.droptitle}
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
           {drop.dropItems.map((item, index) => {
             return (
               <li key={index}>
@@ -89,17 +102,28 @@ export default function Navbar({ title }) {
     var objectArray = dr ? drops[index].dropItems : navLinks;
     return objectArray.map((link, index) => (
       <div className={link.classname} key={index}>
-        <Link href="/">
+        <Link href={link.route}>
           <a>
-            {" "}
-            <button
-              className="linkbutton"
-              onClick={() => {
-                toggleSideBar();
-              }}
-            >
-              {link.pageName}
-            </button>
+            {currentRoute === link.route ? (
+              <button
+                className="linkbutton"
+                onClick={() => {
+                  toggleSideBar();
+                }}
+                style={{ color: "white" }}
+              >
+                {link.pageName}
+              </button>
+            ) : (
+              <button
+                className="linkbutton"
+                onClick={() => {
+                  toggleSideBar();
+                }}
+              >
+                {link.pageName}
+              </button>
+            )}
           </a>
         </Link>
       </div>
@@ -108,10 +132,10 @@ export default function Navbar({ title }) {
 
   function SideDropDown() {
     return drops.map((drop, index) => (
-      <div class="accordion-item" key={index}>
-        <h2 class="accordion-header" id={`heading${index}`}>
+      <div className="accordion-item" key={index}>
+        <h2 className="accordion-header" id={`heading${index}`}>
           <button
-            class="accordion-button collapsed acc-pagename"
+            className="accordion-button collapsed acc-pagename"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={`#collapse${index}`}
@@ -123,11 +147,13 @@ export default function Navbar({ title }) {
         </h2>
         <div
           id={`collapse${index}`}
-          class="accordion-collapse  collapse"
+          className="accordion-collapse  collapse"
           aria-labelledby={`heading${index}`}
           data-bs-parent="#dropDownOptions"
         >
-          <div class="accordion-body  acc-content">{Sidenav(true, index)}</div>
+          <div className="accordion-body  acc-content">
+            {Sidenav(true, index)}
+          </div>
         </div>
       </div>
     ));
@@ -144,7 +170,6 @@ export default function Navbar({ title }) {
     const sidenav = document.querySelector(".sidenav");
 
     const element = document.querySelector(`.${title}`);
-    console.log(element);
     element.classList.add("active-option");
     element.classList.add("selected");
 
@@ -171,30 +196,32 @@ export default function Navbar({ title }) {
     observer_lg.observe(spot);
     const observer_sm = new IntersectionObserver(handleScrollSm, options);
     observer_sm.observe(point);
+
+    setCurrentRoute(window.location.pathname);
   }, []);
 
   return (
     <>
-      <nav class="navbar fixed-top navbar-expand-md d-none d-sm-none d-md-block  ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar fixed-top navbar-expand-md d-none d-sm-none d-md-block  ">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             PSYCHOS
           </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <NavOptions />
               <Dropdown />
             </ul>
 
-            <form class="d-flex search">
+            <form className="d-flex search">
               <input
-                class="form-control me-2 search-bar"
+                className="form-control me-2 search-bar"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn " type="submit">
+              <button className="btn " type="submit">
                 <HiSearch style={{ color: "gray" }} size={30} />
               </button>
             </form>
@@ -203,9 +230,10 @@ export default function Navbar({ title }) {
       </nav>
       <div className="spot d-none d-md-block "></div>
       <nav className="d-sm-block d-md-none sidenav">
-        <button className="toggle-icon">
+        <button className="toggle-icon btn btn-lg">
           <HiMenu
-            color={sideBar && "white"}
+            size={30}
+            color={sideBar ? "white" : "#818181"}
             onClick={() => {
               toggleSideBar();
             }}
@@ -222,7 +250,7 @@ export default function Navbar({ title }) {
         id="mySidebar"
       >
         {Sidenav(false, 0)}
-        <div class="accordion accordian-flush" id="dropDownOptions">
+        <div className="accordion accordian-flush" id="dropDownOptions">
           {SideDropDown()}
         </div>
       </div>
