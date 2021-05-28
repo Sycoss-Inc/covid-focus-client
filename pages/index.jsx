@@ -7,25 +7,23 @@ import Statistics from "../components/Statistics";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Covid Focus</title>
-        <meta
-          name="description"
-          content="Designed and developed by GEC Thrissur"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout title="Dashboard">
+      <div className={styles.container}>
+        <Head>
+          <title>Covid Focus</title>
+          <meta
+            name="description"
+            content="Designed and developed by GEC Thrissur"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <Layout title="Dashboard">
-        <div className={styles.container}>
-          {/* <Header title="Dashboard"/> */}
+        {/* <Header title="Dashboard"/> */}
 
-          <main className={styles.main}>
-            <h1>Main body</h1>
-          </main>
-        </div>
-      </Layout>
-    </>
+        <main className={styles.main}>
+          <h1>Main body</h1>
+        </main>
+      </div>
+    </Layout>
   );
 }

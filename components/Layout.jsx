@@ -6,8 +6,8 @@ import NavBar from "./Navbar";
 export default function Layout({ children, title }) {
   return (
     <div>
-      <NavBar title={title}/>
-      <Header title={title}/>
+      <NavBar title={title} />
+      <Header title={title} />
 
       {children}
 
