@@ -8,8 +8,8 @@ export default function Navbar({ title }) {
 
   const navLinks = [
     { pageName: "Home", route: "/", classname: "Dashboard" },
-    { pageName: "Statistics", route: "/Stats", classname: "Statistics" },
-    { pageName: "Emergency", route: "/medical", classname: "Emergency" },
+    { pageName: "Statistics", route: "/stats", classname: "Statistics" },
+    { pageName: "Emergency", route: "/emergency", classname: "Emergency" },
   ];
 
   const drops = [
