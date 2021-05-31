@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Statistics from "../components/Statistics";
+import Notice from "../components/Notice";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1>Main body</h1>
+          <Notice />
         </main>
       </div>
     </Layout>
