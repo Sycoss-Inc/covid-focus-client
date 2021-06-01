@@ -1,0 +1,50 @@
+.contactpage h1 {
+    background-color: rgb(9, 9, 73);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: azure;
+}
+
+.contactspec h2 {
+    font-size: large;
+}
+
+.contactspec h3 {
+    font-size: medium;
+}
+
+.headlinks {
+    display: contents;
+    text-align: center;
+}
+
+.headlinks a {
+    padding: 5px;
+    background-color: rgb(9, 9, 73);
+    margin: 20px;
+    color: aliceblue;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.contactcardA {
+    text-align: center;
+}
+
+.contactcardB {
+    text-align: center;
+}
+
+.contactcardA {
+    margin: 5px;
+}
+
+.ambulance {
+    color: rgb(219, 4, 4);
+    font-weight: bolder;
+}
+
+.contactsection a {
+    color: black;
+}
