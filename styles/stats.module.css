@@ -1,1 +1,25 @@
 /* Styles for stats here */
+.chart{
+    padding: 1rem;
+    margin: auto;
+    
+
+}
+.carousel{
+    width: 80%;
+    text-align: center;
+    margin:4rem auto ;
+    background-color: #091221;
+    border-radius: 5rem;
+
+}
+
+.graph{
+    margin: auto;
+    /* margin: 20x auto; */
+}
+.car li{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+}
