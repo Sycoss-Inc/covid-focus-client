@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Rate from "../components/Rate";
+import  Notice from "../components/Notice";
 
 export default function Home() {
   return (
