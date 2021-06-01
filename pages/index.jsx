@@ -18,6 +18,8 @@ export default function Home() {
 
         <main className={styles.main}>
           <Rate />
+          
+          <Notice />
         </main>
       </div>
     </Layout>
