@@ -16,3 +16,7 @@ header {
   padding: 20px;
 }
 
+svg rect {
+  margin: 0 auto;
+  padding: 0 auto;
+}
