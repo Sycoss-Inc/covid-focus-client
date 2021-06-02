@@ -26,7 +26,7 @@ function Stats() {
 
       <div className={`container-fluid ${style.stats}`}>
         <Statistics />
-        <div className="row ">
+        <div className={`row ${style.first}`}>
         <div className={`col-12 col-md-6 ${style.chart}`}>
         <Card >
         <Card.Body>
