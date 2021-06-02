@@ -32,6 +32,6 @@
   "bugs": {
     "url": "https://github.com/navneethvariar14/covid-focus-frontend/issues"
   },
-  "homepage": "https://github.com/navneethvariar14/covid-focus-frontend#readme",
+  "homepage": "https://github.com/navneethvariar14/covid-focus-frontend/#readme",
   "devDependencies": {}
 }
