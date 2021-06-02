@@ -1,9 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
+import Pass from "../components/Pass";
 import Rate from "../components/Rate";
 import Notice from "../components/Notice";
-import PieChart from "../components/PieChart";
+
 import Link from "next/link";
 
 export default function Home() {
@@ -37,6 +38,8 @@ export default function Home() {
              
             </div>
           </div>
+          
+          <Pass />
         </main>
       </div>
     </Layout>
