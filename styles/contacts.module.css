@@ -63,6 +63,13 @@
   padding: 1rem;
 }
 
+.contacthsptl h5{
+  color:	#ffcc00 ;
+}
+.medicals h6{
+  color:	#ffcc00 ;
+}
+
 .controlroom {
   display: flex;
   flex-direction: row;
@@ -85,3 +92,4 @@
   border-left: 1px solid rgb(236, 236, 236);
   background-color: white;
 }
+
