@@ -20,9 +20,10 @@ export default function Medical() {
 
         <main className={styles.contactpage}>
           <div className={styles.controlroom}>
-            <div className={styles.contactsection}>
-              <h1>വേലൂർ ഗ്രാമ പഞ്ചായത്ത് ഹെല്പ് ഡെസ്ക്</h1>
-
+            <div className={`${styles.contactsection} container`}>
+              <h5 className="text-light">
+                വേലൂർ ഗ്രാമ പഞ്ചായത്ത് ഹെല്പ് ഡെസ്ക്
+              </h5>
               <div className={styles.contactdetails}>
                 <div className={styles.contactcardA}>
                   <a href="tel:04885285431"></a>
