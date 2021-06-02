@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Statistics from "../components/Statistics";
 import Notice from "../components/Notice";
+import Pass from "../components/Pass";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <main className={styles.main}>
           <h1>Main body</h1>
           <Notice />
+          <Pass />
         </main>
       </div>
     </Layout>
