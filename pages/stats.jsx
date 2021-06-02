@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import style from "../styles/stats.module.css";
@@ -7,7 +7,11 @@ import {Chart} from "react-google-charts";
 import {activeData , positivityRate , positiveData , negativeData , wardData} from "../components/Data";
 import Card from "react-bootstrap/Card";
 import  Carousel   from "react-bootstrap/Carousel";
-import CarouselItem from "react-bootstrap/CarouselItem"
+import CarouselItem from "react-bootstrap/CarouselItem";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
 function Stats() {
   return (
     <Layout title="Statistics">
@@ -27,9 +31,6 @@ function Stats() {
         <Card >
         <Card.Body>
         <Chart
-        // width={'800px'}
-        // height={'250px'}
-        className={`${style.card}`}
         chartType="LineChart"
         loader={<div>Loading Chart</div>}
         data={activeData}
@@ -46,21 +47,16 @@ function Stats() {
         <Card >
         <Card.Body>
         <Chart
-        // width={'800px'}
-        // height={'250px'}
-        className={`${style.card}`} 
         chartType="AreaChart"
         loader={<div>Loading Chart</div>}
         data={positiveData}  
         options={{
-    title: 'Covid Positive',
-    hAxis: { title: 'Date' },
-    vAxis: { minValue: 0 },
-    colors: ['red'],
-    // For the legend to fit, we make the chart area smaller
-    chartArea: { width: '50%', height: '70%' },
-    // lineWidth: 25
-  }}
+          title: 'Covid Positive',
+          hAxis: { title: 'Date' },
+          vAxis: { minValue: 0 },
+          colors: ['red'],
+          chartArea: { width: '50%', height: '70%' },
+          }}
         rootProps={{ 'data-testid': '1' }}
         />
         </Card.Body>
@@ -70,9 +66,6 @@ function Stats() {
         <Card > 
         <Card.Body>
         <Chart
-        // width={'800px'}
-        // height={'250px'}
-        className={`${style.card}`}
         chartType="AreaChart"
         loader={<div>Loading Chart</div>}
         data={negativeData}
@@ -92,16 +85,14 @@ function Stats() {
         <Card >
         <Card.Body>
         <Chart
-        // width={'800px'}
-        // height={'250px'}
         chartType="AreaChart"
         loader={<div>Loading Chart</div>}
         data={positivityRate}
         options={{
           title: 'Test Positivity Rate - Velur',
           hAxis: { title: 'Date' },
-    vAxis: { minValue: 0 },
-    chartArea: { width: '50%', height: '70%' },
+          vAxis: { minValue: 0 },
+          chartArea: { width: '50%', height: '70%' },
         }}
         rootProps={{ 'data-testid': '1' }}
         />
@@ -109,32 +100,82 @@ function Stats() {
         </Card> 
         </div>       
       </div>
-      <div className={`container-fluid ${style.carousel}`}>
-      <Carousel className={`${style.car}`} nextLabel={false} prevLabel={false} >
-      {wardData.map( (ward) =>
-      {return (
-        <CarouselItem >
-        <Chart
-        className={`${style.carousel}`}
+
+
+      <div className={`row d-none d-lg-block ${style.chart}`}>
+      <div className={`${style.carousel}`}>
+        <Carousel className={`${style.car} ${style.car}`} nextLabel={false} prevLabel={false} >
+        {wardData.map( (ward) =>
+        {return (
+         <CarouselItem >
+         <div className={`container-fluid mx-auto col-12 ${style.graph}`}>
+          <Chart
         chartType="AreaChart"
         loader={<div>Loading Chart</div>}
         data={ward}
         options={{
-          height:'350',
-          width:'900',
+          width:'800',
+          height:'300',
+          
           title: {ward},
           hAxis: { title: 'Date' },
           vAxis: { minValue: 0 },
           colors:['purple'],
-          chartArea: { width: '50%', height: '70%' },
+          chartArea: { width: '40%', height: '60%'},
         }}
         rootProps={{ 'data-testid': 1 }}
         />
+        </div>
         </CarouselItem>
       );}
       )}
       </Carousel>
       </div>
+      </div>
+
+        <div className={`d-lg-none container-fluid ${style.modalContainer}`}>
+        {wardData.map( (ward) =>
+        {
+          const [show, setShow] = useState(false);
+          const handleClose = () => setShow(false);
+          const handleShow = () => setShow(true);
+          return(
+            <>
+            <Button className={`${style.modalButton}`} onClick={handleShow}>{ward[0][1]}</Button>
+            <Modal className={`${style.modal}`}  show={show} onHide={handleClose}>
+            <Modal.Header >
+            <Modal.Title>{ward[0][1]}</Modal.Title>
+            <button type="button" className={`btn-danger close ${style.close}`} onClick={handleClose}>
+            <span aria-hidden="true">x</span>
+            </button>
+            </Modal.Header>
+            <Modal.Body>
+            <Chart
+        chartType="AreaChart"
+        loader={<div>Loading Chart</div>}
+        data={ward}
+        options={{
+          width:'100%',
+          height:'100%', 
+          title: {ward},
+          hAxis: { title: 'Date' },
+          vAxis: { minValue: 0 },
+          colors:['purple'],
+          chartArea: { width: '40%', height: '60%'},
+        }}
+        rootProps={{ 'data-testid': 1 }}
+        />
+        </Modal.Body>
+        <Modal.Footer />
+        
+      </Modal>
+    </>
+          );
+        }
+        )}
+
+        </div>
+
       </div>
     </Layout>
   );

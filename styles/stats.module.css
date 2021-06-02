@@ -2,24 +2,51 @@
 .chart{
     padding: 1rem;
     margin: auto;
-    
-
 }
+
+
 .carousel{
     width: 80%;
     text-align: center;
-    margin:4rem auto ;
-    background-color: #091221;
-    border-radius: 5rem;
+    margin:4% auto ;
+    background-color:#194350;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 
 .graph{
-    margin: auto;
-    /* margin: 20x auto; */
+    width: 80%;
+    text-align: center;
+    margin:3% auto ;
+    padding: 3%;
 }
 .car li{
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 100%;
+}
+
+.modal{
+    text-align: center;
+    margin: 10% auto;
+}
+.close {
+    border-style: none;
+    float: right;
+}
+.modalButton{
+    background-color: #194350;
+    width: 15rem;
+    height: 3rem;
+    font-size: 0.75rem;
+    border-style: none;
+    margin: 0.3rem;
+}
+.modalButton:hover{
+    background-color: #4ca1a3;
+    
+}.modalContainer{
+    text-align: center;
+    margin: auto;
 }

@@ -7,8 +7,8 @@ function Statistics(){
     return (
       <>
       <Chart
-      // width={'100%'}
       height={'400px'}
+      width={'100%'}
       chartType="PieChart"
       loader={<div>Loading Chart</div>}
       data={ourdata}
