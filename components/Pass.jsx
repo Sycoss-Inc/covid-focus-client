@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Pass() {
   return (
     <div
-      className="container-fluid mt-2 p-4 mb-2"
+      className="container-fluid p-0 mt-2 p-4 mb-2"
       style={{ backgroundColor: "#091d35" }}
     >
       <div
         className="container my-auto text-light p-4 text-center mb-2"
-        style={{ borderRadius: "20px", backgroundColor: "#ffffff" }}
+        style={{ borderRadius: "20px", backgroundColor: "#fffffF" }}
       >
         <h6
           className="py-2 text-bold"
@@ -34,7 +34,7 @@ export default function Pass() {
         >
           DOWNLOAD
         </button>
-        <div className="d-flex justify-content-around row">
+        <div className="d-flex justify-content-around row align-items-center">
           <img
             src="/covidpass.jpg"
             className="col-sm-7 col-md-8 col-lg-4"
@@ -48,6 +48,7 @@ export default function Pass() {
               flexDirection: "column",
               justifyContent: "center",
               margin: "1rem",
+              maxHeight: "15rem",
             }}
           >
             <h3 className="mt-2 mb-2 text-danger">E-CURFEW PASS</h3>
