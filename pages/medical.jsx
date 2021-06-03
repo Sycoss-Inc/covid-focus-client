@@ -19,8 +19,10 @@ export default function Medical() {
         {/* <Header title="Dashboard"/> */}
 
         <main className={styles.contactpage}>
+
           <div className={styles.controlroom}>
-            <div className={`${styles.contactsection} container`}>
+          <div className="row container">
+          <div className={`col-6 ${styles.contactsection}`}>
               <h5 className="text-light">
                 വേലൂർ ഗ്രാമ പഞ്ചായത്ത് ഹെല്പ് ഡെസ്ക്
               </h5>
@@ -45,10 +47,12 @@ export default function Medical() {
                   <p>9567042118</p>
                 </div>
               </div>
-            </div>
           </div>
-          <div className={styles.contactsection}>
-            <h1>കോവിഡ് കണ്ട്രോൾ റൂം - തൃശ്ശൂർ</h1>
+
+          <div className={`col-6 ${styles.contactsection}`}>
+            <h5 className="text-light">
+            കോവിഡ് കണ്ട്രോൾ റൂം - തൃശ്ശൂർ
+            </h5>
 
             <div className={styles.contactdetails}>
               <div className={styles.contactcardA}>
@@ -68,10 +72,14 @@ export default function Medical() {
             </div>
           </div>
 
-          <div className={styles.contactsection}>
-            <h1>ആശുപത്രികൾ </h1>
+          </div>
+          </div>
+            
+          <h3>ആശുപത്രികൾ </h3>
+          <div className={`${styles.contactsection} ${styles.controlroom }`}>
 
-            <div className={styles.contactdetails}>
+            <div className={`row ${styles.contactdetails} ${styles.contacthsptl} `}>
+            <div className="col-6 ">
               <div className={styles.contactcardA}>
                 <h5>മെഡിക്കൽ കോളേജ് തൃശ്ശൂർ</h5>
                 <a href="tel:04872200310"></a>
@@ -120,6 +128,9 @@ export default function Medical() {
                 <p>04872436100</p>
               </div>
 
+              </div>
+              <div className="col-6">
+
               <div className={styles.contactcardA}>
                 <h5>കോപ്പറേറ്റീവ് ഹോസ്പിറ്റൽ തൃശൂർ</h5>
                 <a href="tel:04872335550"></a>
@@ -167,12 +178,14 @@ export default function Medical() {
                 <a href="tel:04873014700"></a>
                 <p>04873014700</p>
               </div>
+              </div>
             </div>
           </div>
 
-          <div className={styles.contactsection}>
-            <h1>ടാക്സി</h1>
-
+          <div className={styles.controlroom}>
+          <div className="row">
+          <div className={`col-6 ${styles.contactsection} `}>
+          <h4 className="text-light">ടാക്സി</h4>
             <div className={styles.contactdetails}>
               <div className={styles.contactcardA}>
                 <a href="tel:9946791100"></a>
@@ -182,26 +195,30 @@ export default function Medical() {
             </div>
           </div>
 
-          <div className={styles.contactsection}>
-            <h1>മെഡിക്കൽ ഷോപ്പുകൾ </h1>
+          <div className={`col-6 ${styles.contactsection} ${styles.medicals}`}>
+            <h4 className="text-light">മെഡിക്കൽ ഷോപ്പുകൾ </h4>
 
             <div className={styles.contactdetails}>
               <div className={styles.contactcardA}>
-                <h5>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h5>
+                <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
                 <a href="tel:9447403903"></a>
                 <p>9447403903</p>
               </div>
               <div className={styles.contactcardB}>
-                <h5>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h5>
+                <h6>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
                 <a href="tel:9847546703"></a>
                 <p>9847546703</p>
               </div>
             </div>
           </div>
+          </div>
+          </div>
 
+          <h3>ലബോറട്ടറികൾ</h3>
           <div className={styles.contactsection}>
-            <h1>ലബോറട്ടറികൾ</h1>
-            <div className={styles.contactdetails}>
+            <div className={`${styles.contactdetails}`}>
+
+
               <div className={styles.contactcardA}>
                 <div className={styles.contactspec}>
                   <h5>നിസ്ബ (NISBA)</h5>

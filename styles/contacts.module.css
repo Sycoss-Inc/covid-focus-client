@@ -65,6 +65,13 @@
   padding: 1rem;
 }
 
+.contacthsptl h5{
+  color:	#ffcc00 ;
+}
+.medicals h6{
+  color:	#ffcc00 ;
+}
+
 .controlroom {
   display: flex;
   flex-direction: row;
@@ -94,3 +101,4 @@
 .heading {
   font-weight: bold;
 }
+
