@@ -1,23 +1,21 @@
 /* Styles for stats here */
 .chart {
-  padding: 1rem;
-  margin: auto;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #0b081a;
+  border-radius: 1rem;
 }
+.stats {
+  padding: 0;
+}
+
 .carousel {
   width: 80%;
   text-align: center;
-  margin: 4rem auto;
-  background-color: #091221;
-  border-radius: 5rem;
-}
-
-.carousel > div > div > div {
-  margin-left: -2rem;
-}
-
-.carousel > div > div {
-  width: 60vw;
-  padding-left: 1rem auto;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  background-color: #b0ffd1;
+  border-radius: 2rem;
 }
 
 .graph {
@@ -28,4 +26,5 @@
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 100%;
+  background-color: #949494;
 }
