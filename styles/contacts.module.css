@@ -14,7 +14,13 @@
 }
 
 .contactspec h3 {
-  font-size: medium;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 550;
+}
+
+.contactspec {
+  margin-top: 2rem;
 }
 
 .headlinks {
@@ -31,20 +37,41 @@
   margin: 20px;
 }
 
-.contactcardA {
-  color: rgb(255, 255, 255);
-  text-align: center;
+.contactcardA a,
+.contactcardB a {
+  text-decoration: none;
+  color: rgb(255, 255, 145);
 }
 
+.contactcardA h4,
+.contactcardB h4 {
+  font-size: 1.1rem;
+  color: rgb(145, 255, 209);
+  margin-top: 1rem;
+}
+
+.contactcardA,
 .contactcardB {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.contactcardA:hover,
+.contactcardB:hover {
+  transform: scale(1.05);
+}
+/* .contactcardB {
   color: white;
   text-align: center;
   font-size: 1.2rem;
-}
+  margin-bottom: 0.5rem;
+} */
 
-.contactcardA {
+/* .contactcardA {
   margin: 5px;
-}
+} */
 
 .ambulance {
   color: rgb(219, 4, 4);
@@ -65,11 +92,11 @@
   padding: 1rem;
 }
 
-.contacthsptl h5{
-  color:	#ffcc00 ;
+.contacthsptl h5 {
+  color: #ffcc00;
 }
-.medicals h6{
-  color:	#ffcc00 ;
+.medicals h6 {
+  color: #ffcc00;
 }
 
 .controlroom {
@@ -101,4 +128,3 @@
 .heading {
   font-weight: bold;
 }
-

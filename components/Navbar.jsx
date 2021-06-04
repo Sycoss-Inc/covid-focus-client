@@ -8,7 +8,7 @@ export default function Navbar({ title }) {
   const navLinks = [
     { pageName: "Home", route: "/", classname: "Dashboard" },
     { pageName: "Statistics", route: "/Stats", classname: "Statistics" },
-    { pageName: "Emergency", route: "/medical", classname: "Emergency" },
+    { pageName: "Emergency", route: "/emergency", classname: "Emergency" },
   ];
 
   const drops = [
@@ -18,12 +18,13 @@ export default function Navbar({ title }) {
         { pageName: "Ward Member", route: "#", classname: "WardMember" },
         { pageName: "Aasha Workers", route: "#", classname: "AashaWorkers" },
         { pageName: "RRT Members", route: "#", classname: "RRTMembers" },
-        { pageName: "Medical", route: "#", classname: "Medical" },
+        { pageName: "Medical", route: "/Contacts", classname: "Medical" },
       ],
     },
     {
       droptitle: "Medical",
       dropItems: [
+        { pageName: "Medical Contacts", route: "#", classname: "Vaccination" },
         {
           pageName: "Medical Equipments",
           route: "#",
