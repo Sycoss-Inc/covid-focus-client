@@ -1,0 +1,56 @@
+#spotCount {
+  height: 0;
+}
+
+.rates {
+  min-height: 100vh;
+}
+.vector {
+  min-height: 50vh;
+  background-image: url("/vector.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rateCardA,
+.rateCardB,
+.rateCardC,
+.rateCardD {
+  margin-top: 9vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  clip-path: inset(0px -15px -15px 0px);
+  min-height: 16vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.rateCardB {
+  clip-path: inset(0px 0px -15px -15px);
+}
+.rateCardC {
+  clip-path: inset(-15px -15px 0px 0px);
+}
+.rateCardD {
+  clip-path: inset(-15px 0px 0px -15px);
+}
+
+@media screen and (max-width: 768px) {
+  .rateCardA,
+  .rateCardB,
+  .rateCardC,
+  .rateCardD {
+    margin: 0vh;
+    margin-top: 3vh;
+
+    min-height: 20vh;
+    font-size: 16px;
+  }
+  .rateCardD {
+    margin-bottom: 2vh;
+  }
+}

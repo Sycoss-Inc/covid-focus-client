@@ -11,7 +11,6 @@ import {
   positivityRate,
   positiveData,
   negativeData,
-  wardData,
 } from "../components/Data";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
