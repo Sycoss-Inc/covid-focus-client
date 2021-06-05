@@ -1,12 +1,13 @@
 /* Styles for stats here */
 .chart {
   padding: 2rem;
-  margin: 2rem;
+  margin: 1rem auto;
   background-color: #0b081a;
   border-radius: 1rem;
 }
 .stats {
   padding: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .carousel {
@@ -18,17 +19,28 @@
   border-radius: 2rem;
 }
 
-.graph {
-  margin: auto;
-  /* margin: 20x auto; */
-}
 .car li {
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 100%;
   background-color: #949494;
 }
-.pie{
+.pie {
+  margin: 1rem auto;
+}
+
+.pie canvas {
+  height: 50%;
+}
+
+.pieCont {
+  background-color: #0b081a;
   text-align: center;
-  height: 40%;;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 90%;
+    padding: 0.1rem;
+  }
 }
