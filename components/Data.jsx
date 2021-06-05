@@ -49,7 +49,7 @@ const negativeData = [20, 11, 16, 7, 2, 18, 20, 10, 0, 20, 25];
 //Total Positivity Rate date-wise
 const positivityRate = [2, 11, 67, 10, 52, 18, 80, 10, 2, 20, 68];
 
-//Ward-wise data for line graphs
+//Ward-wise Positivity Rate for line graphs
 const wardWiseCases = [
   { wardName: "പാത്രമംഗലം", cases: [11, 2, 2, 2, 7, 1, 5, 7, 7, 8, 3] },
   { wardName: "വെള്ളാറ്റഞ്ഞൂർ S", cases: [11, 2, 2, 2, 7, 1, 5, 7, 7, 8, 3] },
