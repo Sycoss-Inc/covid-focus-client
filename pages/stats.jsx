@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import style from "../styles/stats.module.css";
-import Statistics from "../components/Statistics";
+import PieChart from "../components/Statistics";
 import { Chart } from "react-google-charts";
 import {
   dates,
@@ -28,9 +28,8 @@ function Stats() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <div className={`container-fluid ${style.stats}`}>
-        <Statistics />
+      <PieChart />
         <div className="row justify-content-center">
           {[1, 2, 3, 4].map(() => {
             return (
