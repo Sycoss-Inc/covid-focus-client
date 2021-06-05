@@ -1,9 +1,5 @@
-import Head from "next/head";
 import styles from "../styles/contacts.module.css";
-import Layout from "./Layout";
 import { FaPhoneAlt } from "react-icons/fa";
-
-const ashaWorkers = [];
 
 export default function AashaWorkers() {
   return (

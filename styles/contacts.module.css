@@ -40,7 +40,8 @@
 .contactcardA a,
 .contactcardB a {
   text-decoration: none;
-  color: rgb(255, 255, 145);
+  color: rgb(253, 245, 140);
+  transition: transform 0.3s ease;
 }
 
 .contactcardA h4,
@@ -61,6 +62,10 @@
 .contactcardA:hover,
 .contactcardB:hover {
   transform: scale(1.05);
+}
+
+.contact {
+  line-height: 2rem;
 }
 /* .contactcardB {
   color: white;
@@ -127,4 +132,7 @@
 
 .heading {
   font-weight: bold;
+}
+.contactspec::before {
+  background-color: red;
 }
