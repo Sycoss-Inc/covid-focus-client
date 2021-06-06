@@ -3,7 +3,6 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import style from "../styles/stats.module.css";
 import PieChart from "../components/Statistics";
-import { Chart } from "react-google-charts";
 import {
   dates,
   wards,

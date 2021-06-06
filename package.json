@@ -9,16 +9,12 @@
   },
   "dependencies": {
     "chart.js": "^3.3.2",
-    "chartjs-plugin-datalabels": "^2.0.0-rc.1",
     "next": "10.2.3",
     "react": "17.0.2",
-    "react-animated-number": "^0.4.4",
     "react-animated-numbers": "^0.3.1",
     "react-bootstrap": "^1.6.0",
     "react-chartjs-2": "^3.0.3",
-    "react-charts": "^2.0.0-beta.7",
     "react-dom": "17.0.2",
-    "react-google-charts": "^3.0.15",
     "react-icons": "^4.2.0"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
@@ -33,5 +29,9 @@
     "url": "https://github.com/navneethvariar14/covid-focus-frontend/issues"
   },
   "homepage": "https://github.com/navneethvariar14/covid-focus-frontend/#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
+  }
 }

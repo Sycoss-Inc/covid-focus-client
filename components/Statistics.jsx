@@ -1,12 +1,8 @@
-import { nodeName } from "jquery";
 import React from "react";
-//  import {Chart} from "react-google-charts";
 import styles from "../styles/stats.module.css";
 import { wards } from "./Data";
 import { cases } from "./Data";
 import { Pie } from "react-chartjs-2";
-import Stats from "../pages/stats";
-import "chartjs-plugin-datalabels";
 const data = {
   labels: wards,
   datasets: [
