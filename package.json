@@ -8,13 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1",
-    "jquery": "^3.6.0",
+    "chart.js": "^3.3.2",
     "next": "10.2.3",
-    "popper.js": "^1.16.1",
     "react": "17.0.2",
+    "react-animated-numbers": "^0.3.1",
     "react-bootstrap": "^1.6.0",
-    "react-charts": "^2.0.0-beta.7",
+    "react-chartjs-2": "^3.0.3",
     "react-dom": "17.0.2",
     "react-google-charts": "^3.0.15",
     "react-icons": "^4.2.0",
@@ -31,6 +30,10 @@
   "bugs": {
     "url": "https://github.com/navneethvariar14/covid-focus-frontend/issues"
   },
-  "homepage": "https://github.com/navneethvariar14/covid-focus-frontend#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/navneethvariar14/covid-focus-frontend/#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
+  }
 }

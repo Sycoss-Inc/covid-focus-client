@@ -1,54 +1,124 @@
- import React from "react";
- import {Chart} from "react-google-charts";
+import React from "react";
+import styles from "../styles/stats.module.css";
+import { wards } from "./Data";
+import { cases } from "./Data";
+import { Pie } from "react-chartjs-2";
+const data = {
+  labels: wards,
+  datasets: [
+    {
+      data: cases,
+      backgroundColor: [
+        "#94d0cc",
+        "#eec4c4",
+        "#f29191",
+        "#907fa4",
+        "#e9896a",
+        "#654062",
+        "#f5b461",
+        "#f39233",
+        "#ff4b5c",
+        "#12947f",
+        "#84142d",
+        "#f7be16",
+        "#60204b",
+        "#7ecfc0",
+        "#6ebfb5",
+        "#e8505b",
+        "#84a9ac",
+      ],
+      borderColor: [
+        "#94d0cc",
+        "#eec4c4",
+        "#f29191",
+        "#907fa4",
+        "#e9896a",
+        "#654062",
+        "#f5b461",
+        "#f39233",
+        "#ff4b5c",
+        "#12947f",
+        "#84142d",
+        "#f7be16",
+        "#60204b",
+        "#7ecfc0",
+        "#6ebfb5",
+        "#e8505b",
+        "#84a9ac",
+      ],
+      borderWidth: 1,
+      hoverOffset: 20,
+    },
+  ],
+};
 
-export default function Statistics(){
+const PieChart = () => (
+  <>
+    <div className={`container ${styles.pie}`}>
+      <div
+        className={`container-fluid m-1 p-2 rounded-pill mb-0 ${styles.pieCont}`}
+      >
+        <h3 className="text-light">Active Cases</h3>
+      </div>
+      <Pie
+        data={data}
+        options={{
+          animation: {
+            duration: 3000,
+          },
+          plugins: {
+            legend: {
+              position: "right",
+              align: "center",
+              display: true,
+              labels: { padding: 15, boxwidth: 10 },
+            },
+          },
+        }}
+      />
+    </div>
+  </>
+);
 
-  const ourdata = [
-    ['Ward', 'Active Cases'],
-    ['Ward 1 - Pathramangalam', 11],
-    ['Ward 2 - Vellattanjoor N', 2],
-    ['Ward 3 - Thayyur', 2],
-    ['Ward 4 - Pazhavur', 2],
-    ['Ward 5 - Kodassery', 7],
-    ['Ward 6 - Vengilassery', 1],
-    ['Ward 7 - Arnos Nagar', 5],
-    ['Ward 8 - Kuttamkulam', 7],
-    ['Ward 9 - Kiralur', 7],
-    ['Ward 10 - Kuruman W', 8],
-    ['Ward 11 - Krurmal E', 3],
-    ['Ward 12 - Vengilassery W', 7],
-    ['Ward 13 - Vellattanjoor', 7],
-    ['Ward 14 - Velur', 7],
-    ['Ward 15 - Thalakkottukara', 1],
-    ['Ward 16 - Thandilam', 7],
-    ['Ward 17 - Puliyannur', 4],
-  ];
+// function Statistics(){
 
-    return (
-      <>
-      <Chart
-      width={'500px'}
-      height={'300px'}
-      chartType="PieChart"
-      loader={<div>Loading Chart</div>}
-      data={ourdata}
-      options={{
-        title: 'Active Cases',
-      }}
-      rootProps={{ 'data-testid': '1' }}
-    />
-    <Chart
-      width={'700px'}
-      height={'300px'}
-      chartType="LineChart"
-      loader={<div>Loading Chart</div>}
-      data={ourdata}
-      options={{
-        title: 'Active Cases',
-      }}
-      rootProps={{ 'data-testid': '1' }}
-    />
-    </>
-    
-  );
-}
+//     return (
+//       <>
+//        <Pie
+//        data={{
+//        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//        datasets: ourdata,
+//        type: 'pie',
+//       //  data: ourdata,
+//        options: {
+//          responsive: true,
+//          plugins: {
+//          legend: {
+//            position: 'top',
+//           },
+//          title: {
+//            display: true,
+//            text: 'Active Cases'
+//           }
+//          }
+//        },
+//       }}
+
+//       // width={'100%'}
+//       // height={'400px'}
+//       // chartType="PieChart"
+//       // loader={<div>Loading Chart</div>}
+//       // data={ourdata}
+//       // options={{
+//       //   title: 'Active Cases',
+//       //   chartArea: { width: '50%', height: '70%' },
+//       // }}
+//       // rootProps={{ 'data-testid': '1' }}
+//      />
+
+//     </>
+
+//   );
+// }
+
+export default PieChart;

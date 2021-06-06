@@ -1,0 +1,46 @@
+/* Styles for stats here */
+.chart {
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: #0b081a;
+  border-radius: 1rem;
+}
+.stats {
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.carousel {
+  width: 80%;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  background-color: #b0ffd1;
+  border-radius: 2rem;
+}
+
+.car li {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 100%;
+  background-color: #949494;
+}
+.pie {
+  margin: 1rem auto;
+}
+
+.pie canvas {
+  height: 50%;
+}
+
+.pieCont {
+  background-color: #0b081a;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 90%;
+    padding: 0.1rem;
+  }
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Russo+One&family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Sigmar+One&display=swap");
+.hero {
+  height: 95vh;
+}
+.heroTitleSection {
+  height: 95vh;
+
+  background: radial-gradient(
+      87.39% 105.03% at 97.88% 1.86%,
+      #f0f4fb 0%,
+      rgba(94, 132, 189, 0.412) 24.96%,
+      rgba(18, 37, 65, 0.35) 50.52%,
+      #182f52 67.71%,
+      #0e1e35 91.67%
+    ),
+    #293952;
+  color: #c4c4c4;
+
+  font-weight: bold;
+  display: grid;
+  row-gap: 4px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 100px 0px;
+}
+.heroTitleSection h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.heroTitleSection h4 {
+  margin-top: 2vh;
+  font-size: 2rem;
+}
+
+.image img {
+  position: absolute;
+  top: 5vh;
+  left: 51vw;
+  height: 45vw;
+  width: 45vw;
+}
