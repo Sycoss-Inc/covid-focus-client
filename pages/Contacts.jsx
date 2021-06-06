@@ -19,13 +19,13 @@ export default function Contacts() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Slide left duration={1500}>
+        <Slide left duration={1200}>
           <WardMember />
         </Slide>
-        <Slide right duration={1500}>
+        <Slide right duration={1200}>
           <AashaWorkers />
         </Slide>
-        <Slide left duration={1500}>
+        <Slide left duration={1200}>
           <RRTMembers />
         </Slide>
         <Medical />
