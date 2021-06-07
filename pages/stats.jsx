@@ -113,12 +113,12 @@ function Stats() {
           <div className={`container col-12 col-xs-12 ${style.carousel}`}>
             <Carousel
               className={`${style.car}`}
-              nextLabel={false}
-              prevLabel={false}
+              nextLabel="false"
+              prevLabel="false"
             >
               {wardWiseCases.map((ward, index) => {
                 return (
-                  <CarouselItem>
+                  <CarouselItem key={index}>
                     <div
                       key={index}
                       style={{

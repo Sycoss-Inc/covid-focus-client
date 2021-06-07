@@ -3,10 +3,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { wardmembers } from "./details";
 
 const Numbercard = ({ ashas }) => {
-  return ashas.map((asha) => {
+  return ashas.map((asha, index) => {
     return (
       <div>
-        <a href={`tel:${asha.phone}`}>
+        <a href={`tel:${asha.phone}`} key={index}>
           <FaPhoneAlt />{" "}
           <span>
             {asha.name} - {asha.phone}
