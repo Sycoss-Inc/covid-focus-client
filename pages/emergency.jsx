@@ -123,25 +123,27 @@ export default function Emergency() {
             <HospitalList />
           </Slide>
 
-          <h3 className={styles.heading}>ടാക്സി</h3>
-          <div id="section 4" className={styles.controlroom}>
-            <div className={styles.contactdetails}>
-              <div className={styles.contactcardA}>
-                <a href="tel:9946791100"></a>
-                <h5>ഡെയ്സൺ</h5>
-                <a
-                  href={`tel:9946791100`}
-                  className="text-decoration-none text-light"
-                >
-                  <div className="m-3 fs-5">
-                    <FaPhoneAlt className="m-1" />
-                    9946791100
-                  </div>
-                </a>
-                <h5 className="text-danger">24x7 Service</h5>
+          <Slide bottom>
+            <h3 className={styles.heading}>ടാക്സി</h3>
+            <div id="section 4" className={styles.controlroom}>
+              <div className={styles.contactdetails}>
+                <div className={styles.contactcardA}>
+                  <a href="tel:9946791100"></a>
+                  <h5>ഡെയ്സൺ</h5>
+                  <a
+                    href={`tel:9946791100`}
+                    className="text-decoration-none text-light"
+                  >
+                    <div className="m-3 fs-5">
+                      <FaPhoneAlt className="m-1" />
+                      9946791100
+                    </div>
+                  </a>
+                  <h5 className="text-danger">24x7 Service</h5>
+                </div>
               </div>
             </div>
-          </div>
+          </Slide>
         </main>
       </div>
     </Layout>

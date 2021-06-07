@@ -13,6 +13,7 @@ function Slides() {
   return notices.map((slide, index) => (
     <div
       className={`carousel-item ${styles.item} ${index === 0 ? "active" : ""}`}
+      key={index}
     >
       <div className={`${styles.noticetext}`}>
         <h3>അറിയിപ്പ്</h3>

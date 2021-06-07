@@ -3,9 +3,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { rrt } from "../components/details";
 
 const Numbercard = ({ rs }) => {
-  return rs.map((r) => {
+  return rs.map((r, index) => {
     return (
-      <div className={styles.contact}>
+      <div className={styles.contact} key={index}>
         <a href={`tel:${r.phone}`}>
           <FaPhoneAlt />{" "}
           <span>
@@ -20,7 +20,7 @@ const Numbercard = ({ rs }) => {
 function RRT({ startIndex, endIndex }) {
   return rrt.slice(startIndex, endIndex).map((r, index) => {
     return (
-      <div className={styles.contactcardA}>
+      <div className={styles.contactcardA} key={index}>
         <div className={styles.contactspec}>
           <h3>വാർഡ് {startIndex + index + 1}</h3>
           <h3>{r.ward}</h3>
