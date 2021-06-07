@@ -126,14 +126,11 @@ export default function Medical() {
           </div>
         </div>
 
+        <h3 className={styles.heading}>മെഡിക്കൽ ഷോപ്പുകൾ</h3>
         <div className={styles.controlroom}>
-          <div className="row">
-            <div className={`col-6 ${styles.ctrlroom1} ${styles.medicals}`}>
-              <h4 className="text-light">മെഡിക്കൽ ഷോപ്പുകൾ </h4>
-
-              <div className={styles.contactdetails}>
-                <div className={styles.contactcardA}>
-                  <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
+          <div className={styles.contactdetails}>
+            <div className={styles.contactcardA}>
+            <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
                   <a
                     href={`tel:9447403903`}
                     className="text-decoration-none text-light"
@@ -143,8 +140,8 @@ export default function Medical() {
                       9447403903
                     </div>
                   </a>
-                </div>
-                <div className={styles.contactcardB}>
+            </div>
+          <div className={styles.contactcardB}>
                   <h6>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
                   <a
                     href={`tel:9847546703`}
@@ -156,14 +153,16 @@ export default function Medical() {
                     </div>
                   </a>
                 </div>
-              </div>
-            </div>
+        </div>
+        </div>
 
-            <div className={`${styles.ctrlroom2}`}>
-              <h3>ലബോറട്ടറികൾ</h3>
-              <div className={styles.contactcardA}>
+        <h3 className={styles.heading}>ലബോറട്ടറികൾ</h3>
+        <div className={styles.controlroom}>
+          <div className={`row  ${styles.labs}`}>
+          <div className={`col-6 ${styles.ctrlroom1}`}>
+          <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
-                  <h6>നിസ്ബ (NISBA)</h6>
+                  <h5>നിസ്ബ (NISBA)</h5>
                   <h6>പന്നിത്തടം</h6>
                 </div>
                 <a
@@ -175,12 +174,12 @@ export default function Medical() {
                     8943632097
                   </div>
                 </a>
-                <a href="tel:8943632097"></a>
-                <p>8943632097</p>
+                {/* <a href="tel:8943632097"></a> */}
+                {/* <p>8943632097</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
 
-              <div className={styles.contactcardB}>
+              <div className={` ${styles.contactcardB}`}>
                 <div className={styles.contactspec}>
                   <h5>MAC Covid Collection Centre</h5>
                   <h6>കുന്നംകുളം</h6>
@@ -194,12 +193,14 @@ export default function Medical() {
                     9633937557
                   </div>
                 </a>
-                <a href="tel:9633937557"></a>
-                <p>9633937557</p>
+                {/* <a href="tel:9633937557"></a> */}
+                {/* <p>9633937557</p> */}
                 <p>ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
+              </div>
+              <div className={`col-6 ${styles.ctrlroom2}`}>
 
-              <div className={styles.contactcardA}>
+              <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
                   <h5>സുധർമ്മ ലാബ്</h5>
                   <h6>എരുമപ്പെട്ടി</h6>
@@ -213,11 +214,11 @@ export default function Medical() {
                     9061631111
                   </div>
                 </a>
-                <a href="tel:9061631111"></a>
-                <p>9061631111</p>
+                {/* <a href="tel:9061631111"></a> */}
+                {/* <p>9061631111</p> */}
               </div>
 
-              <div className={styles.contactcardB}>
+              <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
                   <h5>സേവന ലാബ്</h5>
                   <h6>മറ്റം, പേരാമംഗലം</h6>
@@ -231,17 +232,17 @@ export default function Medical() {
                     9847042905
                   </div>
                 </a>
-                <a href="tel:9847042905"></a>
-                <p>9847042905</p>
+                {/* <a href="tel:9847042905"></a> */}
+                {/* <p>9847042905</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ </p>
               </div>
-            </div>
+              </div>
           </div>
         </div>
 
         <h3 className={styles.heading}>വേലൂർ കുടുംബാരോഗ്യകേന്ദ്രം</h3>
         <div className={styles.controlroom}>
-          <div className={styles.ctrlroom1}>
+          <div className={`${styles.ctrlroom1 } ${styles.health}`}>
             <h6 className="text-warning">ജൂനിയർ പബ്ലിക്ക് ഹെൽത്ത് നഴ്സ്</h6>
             <div className={styles.contactcardA}>
               <h5>FWC കിരാലൂർ</h5>
@@ -287,7 +288,7 @@ export default function Medical() {
             </div>
           </div>
 
-          <div className={styles.ctrlroom2}>
+          <div className={`${styles.ctrlroom2} ${styles.health}`}>
             <h6 className="text-warning">ജൂനിയർ ഹെൽത്ത് ഇൻസ്‌പെക്ടർ</h6>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 1 - 6 </h5>
@@ -335,7 +336,7 @@ export default function Medical() {
         </div>
 
         <h3 className={styles.heading}>ടെലി കൗൺസിലിംഗ്</h3>
-        <div className={`d-flex flex-column ${styles.controlroom}`}>
+        <div className={`d-flex flex-column ${styles.controlroom} ${styles.tele}`}>
           <div className={styles.ctrlroom2}>
             <h4 className={`${styles.heading} text-center text-warning`}>
               ദിശ
@@ -356,12 +357,12 @@ export default function Medical() {
                   04712552056
                 </div>
               </a>
-              <a href="tel:04712552056"></a>
-              <p>04712552056</p>
+              {/* <a href="tel:04712552056"></a>
+              <p>04712552056</p> */}
             </div>
           </div>
 
-          <div className={styles.ctrlroom2}>
+          <div className={styles.ctrlroom2} >
             <h4 className={`text-center text-warning fs-5`}>മനഃശാസ്ത്രജ്ഞർ</h4>
             <div className={styles.contactcardA}>
               <h5>Huda N</h5>
@@ -375,8 +376,9 @@ export default function Medical() {
                   8086932304
                 </div>
               </a>
-              <a href="tel:8086932304"> </a>
-              <p>8086932304 തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p>
+              {/* <a href="tel:8086932304"> </a> */}
+              {/* <p>8086932304 തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p> */}
+              <p>തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p>
             </div>
           </div>
         </div>
