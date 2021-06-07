@@ -1,0 +1,138 @@
+.contactpage h6 {
+  background-color: transparent;
+  text-align: center;
+  color: azure;
+}
+
+.contactpage h3 {
+  text-align: center;
+  margin: 0.7rem;
+}
+
+.contactspec h2 {
+  font-size: large;
+}
+
+.contactspec h3 {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 550;
+}
+
+.contactspec {
+  margin-top: 2rem;
+}
+
+.headlinks {
+  display: contents;
+  text-align: center;
+}
+
+.headlinks a {
+  padding: 5px;
+  background-color: rgb(9, 9, 73);
+  margin: 20px;
+  color: aliceblue;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.contactcardA a,
+.contactcardB a {
+  text-decoration: none;
+  color: rgb(253, 245, 140);
+  transition: transform 0.3s ease;
+}
+
+.contactcardA h4,
+.contactcardB h4 {
+  font-size: 1.1rem;
+  color: rgb(145, 255, 209);
+  margin-top: 1rem;
+}
+
+.contactcardA,
+.contactcardB {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.contactcardA:hover,
+.contactcardB:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  line-height: 2rem;
+}
+/* .contactcardB {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+} */
+
+/* .contactcardA {
+  margin: 5px;
+} */
+
+.ambulance {
+  color: rgb(219, 4, 4);
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contactsection a {
+  color: black;
+}
+
+.contactdetails {
+  background-color: #272942;
+  /* width: 80vw; */
+  margin: 0 auto;
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+
+.contacthsptl h5 {
+  color: #ffcc00;
+}
+.medicals h6 {
+  color: #ffcc00;
+}
+
+.controlroom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1rem;
+  border-radius: 0.8rem;
+  width: 70%;
+  margin: 1rem auto;
+  background-color: #272942;
+}
+
+.ctrlroom1 {
+  border-right: 1px solid rgb(177, 177, 177);
+  width: 45%;
+  margin: 1rem auto;
+}
+
+.ctrlroom2 {
+  width: 40%;
+  margin: 1rem auto;
+}
+
+.contactcardA div {
+  color: rgb(253, 230, 127);
+}
+
+.heading {
+  font-weight: bold;
+}
+.contactspec::before {
+  background-color: red;
+}
