@@ -174,7 +174,7 @@ export default function Medical() {
                     8943632097
                   </div>
                 </a>
-                {/* <a href="tel:8943632097"></a> */}
+                <a href="tel:8943632097"></a>
                 {/* <p>8943632097</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
@@ -193,7 +193,7 @@ export default function Medical() {
                     9633937557
                   </div>
                 </a>
-                {/* <a href="tel:9633937557"></a> */}
+                <a href="tel:9633937557"></a>
                 {/* <p>9633937557</p> */}
                 <p>ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
@@ -214,7 +214,7 @@ export default function Medical() {
                     9061631111
                   </div>
                 </a>
-                {/* <a href="tel:9061631111"></a> */}
+                <a href="tel:9061631111"></a>
                 {/* <p>9061631111</p> */}
               </div>
 
@@ -232,7 +232,7 @@ export default function Medical() {
                     9847042905
                   </div>
                 </a>
-                {/* <a href="tel:9847042905"></a> */}
+                <a href="tel:9847042905"></a>
                 {/* <p>9847042905</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ </p>
               </div>
@@ -246,45 +246,15 @@ export default function Medical() {
             <h6 className="text-warning">ജൂനിയർ പബ്ലിക്ക് ഹെൽത്ത് നഴ്സ്</h6>
             <div className={styles.contactcardA}>
               <h5>FWC കിരാലൂർ</h5>
-              <a
-                href={`tel:9495067778`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9495067778
-                </div>
-              </a>
-              <a href="tel:9495067778"></a>
-              <p>സഫിയ കെ - 9495067778</p>
+              <p>സഫിയ കെ <a href="tel:9495067778"><FaPhoneAlt className="m-1" /> 9495067778</a> </p>
             </div>
             <div className={styles.contactcardB}>
               <h5>FWC കുറുമാൽ</h5>
-              <a
-                href={`tel:9744199898`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9744199898
-                </div>
-              </a>
-              <a href="tel:9744199898"></a>
-              <p>വീണ ഇ ആർ - 9744199898</p>
+              <p>വീണ ഇ ആർ <a href="tel:9744199898"> <FaPhoneAlt className="m-1" />9744199898 </a></p>
             </div>
             <div className={styles.contactcardA}>
               <h5>FWC വേലൂർ</h5>
-              <a
-                href={`tel:9947865398`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9947865398
-                </div>
-              </a>
-              <a href="tel:9947865398"></a>
-              <p>ഗീത - 9947865398</p>
+              <p>ഗീത <a href="tel:9947865398"><FaPhoneAlt className="m-1" />9947865398</a> </p>
             </div>
           </div>
 
@@ -292,45 +262,16 @@ export default function Medical() {
             <h6 className="text-warning">ജൂനിയർ ഹെൽത്ത് ഇൻസ്‌പെക്ടർ</h6>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 1 - 6 </h5>
-              <a
-                href={`tel:9995613735`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9995613735
-                </div>
-              </a>
-              <a href="tel:9995613735"></a>
-              <p>രാജേഷ് - 9995613735</p>
+              <p>രാജേഷ് <a href="tel:9995613735"><FaPhoneAlt className="m-1" />9995613735</a> </p>
             </div>
             <div className={styles.contactcardB}>
               <h5>വാർഡ് 7 - 13</h5>
-              <a
-                href={`tel:9567518155`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9567518155
-                </div>
-              </a>
-              <a href="tel:9567518155"></a>
-              <p>ദീപകുമാർ - 9567518155</p>
+              <p>ദീപകുമാർ <a href="tel:9567518155"><FaPhoneAlt className="m-1" /> 9567518155</a></p>
             </div>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 14 - 17</h5>
-              <a
-                href={`tel:7592016885`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  7592016885
-                </div>
-              </a>
               <a href="tel:7592016885"></a>
-              <p>സ്മിത ശങ്കർ മഠത്തിൽ - 7592016885</p>
+              <p>സ്മിത ശങ്കർ മഠത്തിൽ <a href="tel:7592016885"><FaPhoneAlt className="m-1" />7592016885</a> </p>
             </div>
           </div>
         </div>
@@ -357,8 +298,8 @@ export default function Medical() {
                   04712552056
                 </div>
               </a>
-              {/* <a href="tel:04712552056"></a>
-              <p>04712552056</p> */}
+               <a href="tel:04712552056"> </a>
+              {/* <p>04712552056</p> */} 
             </div>
           </div>
 
@@ -376,7 +317,7 @@ export default function Medical() {
                   8086932304
                 </div>
               </a>
-              {/* <a href="tel:8086932304"> </a> */}
+              <a href="tel:8086932304"> </a>
               {/* <p>8086932304 തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p> */}
               <p>തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p>
             </div>
