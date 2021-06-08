@@ -66,40 +66,54 @@ function Vaccination() {
             </h6>
           </ul>
         </div>
-        <hr />
-        <table>
-          <tr>
-            <td>
-              <img
-                src="https://prod-cdn.preprod.co-vin.in/assets/images/covid19logo.jpg"
-                alt="COWIN_LOGO"
-              />
-            </td>
-            <td>
+
+        <div
+          className={`${style.table} d-flex justify-content-evenly align-items-center`}
+        >
+          <div>
+            <img
+              src="https://prod-cdn.preprod.co-vin.in/assets/images/covid19logo.jpg"
+              alt="COWIN_LOGO"
+            />
+          </div>
+          <div
+            className={`${style.register} p-3 rounded-3 text-light fs-4 d-inline`}
+          >
+            <div className="text-center">
               COWIN പോർട്ടലിൽ രജിസ്റ്റർ ചെയ്യൂ <br />
-              <a href="https://selfregistration.cowin.gov.in/"> റജിസ്റ്റർ </a>
-            </td>
-          </tr>
-        </table>
+              <button className="rounded-pill btn btn-primary m-3 text-center">
+                <a
+                  className="text-decoration-none text-light"
+                  href="https://selfregistration.cowin.gov.in/"
+                >
+                  {" "}
+                  റജിസ്റ്റർ{" "}
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className={style.vel}>
           <strong>
-            <a href="https://www.vaccinateme.in/covid/list?districtId=305&districtName=Kozhikode&pincode=680601&stateId=17&type=pincode">
+            <a
+              href="https://www.vaccinateme.in/covid/list?districtId=305&districtName=Kozhikode&pincode=680601&stateId=17&type=pincode"
+              className="text-decoration-none"
+            >
               <h4 className={style.net}>
                 വേലൂരിലെ കോവിഡ് വാക്സിൻ ലഭ്യത പരിശോധിക്കുക
               </h4>
             </a>{" "}
           </strong>
-          <br />
-          <h4>
+          <h4 className={style.default}>
             {" "}
-            <strong className={style.default}>
+            <strong>
               {" "}
               ഏതെങ്കിലും രോഗാവസ്ഥയിലുള്ള 18- 44 വയസ്സുള്ളവർ കോവിഡ് വാക്സിനേഷനായി
               എന്തു ചെയ്യണം ?
             </strong>
           </h4>
           <br />{" "}
-          <h6>
+          <h6 className={`${style.eighteen}`}>
             18 നും 45 നും ഇടയിൽ പ്രായമുള്ള ഹൃദ്രോഗികള്‍, ഹൃദയ വാൽവ് ശസ്ത്രക്രിയ
             കഴിഞ്ഞവര്‍, പ്രമേഹം, വ‍ൃക്ക, കരള്‍ രോഗികള്‍, രോഗപ്രതിരോധ ശേഷിയെ
             ബാധിക്കുന്ന മരുന്നുകള്‍ കഴിക്കുന്നവര്‍, ക്യാൻസര്‍ രോഗികള്‍, അരിവാള്‍
@@ -145,46 +159,28 @@ function Vaccination() {
             കോവിഡ് വാക്സിൻ ലഭിക്കാനുള്ള സ്ലോട്ട് ലഭ്യമായാൽ തൽക്ഷണം നിങ്ങളുടെ
             ടെലിഗ്രാം ആപ്പിൽ അറിയിപ്പ് ലഭിക്കാനായി ഈ ചാനലുകളിൽ ജോയിൻ ചെയ്യുക
           </h4>
-          <br />
-          <br />
           <table className={style.tele}>
             <tr>
-              <td
-                style={{
-                  padding: 20,
-                }}
-              >
+              <td>
                 <img
                   className={style.tele}
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"
                   alt="Telegram_Group_45+"
                 />
               </td>
-              <td
-                style={{
-                  padding: 20,
-                }}
-              >
+              <td>
                 <a href="https://www.google.com/url?q=https%3A%2F%2Ftelegram.me%2Fjoinchat%2FF3n38kfnGeoyZjVl&sa=D&sntz=1&usg=AFQjCNHZHbmE2A1epIfkgFRVVIUWAz2LhA">
                   45 വയസ്സിന് മുകളിൽ ഉള്ളവർ{" "}
                 </a>
               </td>
-              <td
-                style={{
-                  padding: 20,
-                }}
-              >
+              <td>
                 <img
                   className={style.tele}
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"
                   alt="Telegram_Group_18+45"
                 />
               </td>
-              <td
-                style={{
-                  padding: 20,
-                }}
-              >
+              <td>
                 <a href="https://www.google.com/url?q=https%3A%2F%2Ftelegram.me%2Fjoinchat%2FNzAwKJZP0-I3OGY1&sa=D&sntz=1&usg=AFQjCNEt_mb-WhjNqAXbzTeVDVD3vs4EUg">
                   45 വയസ്സിന് താഴെ ഉള്ളവർ{" "}
                 </a>
