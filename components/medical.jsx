@@ -6,7 +6,7 @@ import HospitalList from "./hospitals";
 
 export default function Medical() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="medical">
       <main className={styles.contactpage}>
         <h4 className={styles.ambulance}>
           ആംബുലൻസ് ലഭിക്കാനും ഈ നമ്പറുകളിലാണ് ബന്ധപ്പെടേണ്ടത്
@@ -126,44 +126,43 @@ export default function Medical() {
           </div>
         </div>
 
+        <h3 className={styles.heading}>മെഡിക്കൽ ഷോപ്പുകൾ</h3>
         <div className={styles.controlroom}>
-          <div className="row">
-            <div className={`col-6 ${styles.ctrlroom1} ${styles.medicals}`}>
-              <h4 className="text-light">മെഡിക്കൽ ഷോപ്പുകൾ </h4>
-
-              <div className={styles.contactdetails}>
-                <div className={styles.contactcardA}>
-                  <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
-                  <a
-                    href={`tel:9447403903`}
-                    className="text-decoration-none text-light"
-                  >
-                    <div className="m-3">
-                      <FaPhoneAlt className="m-1" />
-                      9447403903
-                    </div>
-                  </a>
+          <div className={styles.contactdetails}>
+            <div className={styles.contactcardA}>
+              <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
+              <a
+                href={`tel:9447403903`}
+                className="text-decoration-none text-light"
+              >
+                <div className="m-3">
+                  <FaPhoneAlt className="m-1" />
+                  9447403903
                 </div>
-                <div className={styles.contactcardB}>
-                  <h6>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
-                  <a
-                    href={`tel:9847546703`}
-                    className="text-decoration-none text-light"
-                  >
-                    <div className="m-3">
-                      <FaPhoneAlt className="m-1" />
-                      9847546703
-                    </div>
-                  </a>
-                </div>
-              </div>
+              </a>
             </div>
+            <div className={styles.contactcardB}>
+              <h6>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
+              <a
+                href={`tel:9847546703`}
+                className="text-decoration-none text-light"
+              >
+                <div className="m-3">
+                  <FaPhoneAlt className="m-1" />
+                  9847546703
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
 
-            <div className={`${styles.ctrlroom2}`}>
-              <h3>ലബോറട്ടറികൾ</h3>
-              <div className={styles.contactcardA}>
+        <h3 className={styles.heading}>ലബോറട്ടറികൾ</h3>
+        <div className={styles.controlroom}>
+          <div className={`row  ${styles.labs}`}>
+            <div className={`col-6 ${styles.ctrlroom1}`}>
+              <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
-                  <h6>നിസ്ബ (NISBA)</h6>
+                  <h5>നിസ്ബ (NISBA)</h5>
                   <h6>പന്നിത്തടം</h6>
                 </div>
                 <a
@@ -175,12 +174,12 @@ export default function Medical() {
                     8943632097
                   </div>
                 </a>
-                <a href="tel:8943632097"></a>
-                <p>8943632097</p>
+                {/* <a href="tel:8943632097"></a> */}
+                {/* <p>8943632097</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
 
-              <div className={styles.contactcardB}>
+              <div className={` ${styles.contactcardB}`}>
                 <div className={styles.contactspec}>
                   <h5>MAC Covid Collection Centre</h5>
                   <h6>കുന്നംകുളം</h6>
@@ -194,12 +193,13 @@ export default function Medical() {
                     9633937557
                   </div>
                 </a>
-                <a href="tel:9633937557"></a>
-                <p>9633937557</p>
+                {/* <a href="tel:9633937557"></a> */}
+                {/* <p>9633937557</p> */}
                 <p>ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
-
-              <div className={styles.contactcardA}>
+            </div>
+            <div className={`col-6 ${styles.ctrlroom2}`}>
+              <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
                   <h5>സുധർമ്മ ലാബ്</h5>
                   <h6>എരുമപ്പെട്ടി</h6>
@@ -213,11 +213,11 @@ export default function Medical() {
                     9061631111
                   </div>
                 </a>
-                <a href="tel:9061631111"></a>
-                <p>9061631111</p>
+                {/* <a href="tel:9061631111"></a> */}
+                {/* <p>9061631111</p> */}
               </div>
 
-              <div className={styles.contactcardB}>
+              <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
                   <h5>സേവന ലാബ്</h5>
                   <h6>മറ്റം, പേരാമംഗലം</h6>
@@ -231,8 +231,8 @@ export default function Medical() {
                     9847042905
                   </div>
                 </a>
-                <a href="tel:9847042905"></a>
-                <p>9847042905</p>
+                {/* <a href="tel:9847042905"></a> */}
+                {/* <p>9847042905</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ </p>
               </div>
             </div>
@@ -241,101 +241,79 @@ export default function Medical() {
 
         <h3 className={styles.heading}>വേലൂർ കുടുംബാരോഗ്യകേന്ദ്രം</h3>
         <div className={styles.controlroom}>
-          <div className={styles.ctrlroom1}>
+          <div className={`${styles.ctrlroom1} ${styles.health}`}>
             <h6 className="text-warning">ജൂനിയർ പബ്ലിക്ക് ഹെൽത്ത് നഴ്സ്</h6>
             <div className={styles.contactcardA}>
               <h5>FWC കിരാലൂർ</h5>
-              <a
-                href={`tel:9495067778`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9495067778
-                </div>
-              </a>
-              <a href="tel:9495067778"></a>
-              <p>സഫിയ കെ - 9495067778</p>
+              <p>
+                സഫിയ കെ{" "}
+                <a href="tel:9495067778">
+                  <FaPhoneAlt className="m-1" /> 9495067778
+                </a>{" "}
+              </p>
             </div>
             <div className={styles.contactcardB}>
               <h5>FWC കുറുമാൽ</h5>
-              <a
-                href={`tel:9744199898`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <p>
+                വീണ ഇ ആർ{" "}
+                <a href="tel:9744199898">
+                  {" "}
                   <FaPhoneAlt className="m-1" />
-                  9744199898
-                </div>
-              </a>
-              <a href="tel:9744199898"></a>
-              <p>വീണ ഇ ആർ - 9744199898</p>
+                  9744199898{" "}
+                </a>
+              </p>
             </div>
             <div className={styles.contactcardA}>
               <h5>FWC വേലൂർ</h5>
-              <a
-                href={`tel:9947865398`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <p>
+                ഗീത{" "}
+                <a href="tel:9947865398">
                   <FaPhoneAlt className="m-1" />
                   9947865398
-                </div>
-              </a>
-              <a href="tel:9947865398"></a>
-              <p>ഗീത - 9947865398</p>
+                </a>{" "}
+              </p>
             </div>
           </div>
 
-          <div className={styles.ctrlroom2}>
+          <div className={`${styles.ctrlroom2} ${styles.health}`}>
             <h6 className="text-warning">ജൂനിയർ ഹെൽത്ത് ഇൻസ്‌പെക്ടർ</h6>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 1 - 6 </h5>
-              <a
-                href={`tel:9995613735`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <p>
+                രാജേഷ്{" "}
+                <a href="tel:9995613735">
                   <FaPhoneAlt className="m-1" />
                   9995613735
-                </div>
-              </a>
-              <a href="tel:9995613735"></a>
-              <p>രാജേഷ് - 9995613735</p>
+                </a>{" "}
+              </p>
             </div>
             <div className={styles.contactcardB}>
               <h5>വാർഡ് 7 - 13</h5>
-              <a
-                href={`tel:9567518155`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9567518155
-                </div>
-              </a>
-              <a href="tel:9567518155"></a>
-              <p>ദീപകുമാർ - 9567518155</p>
+              <p>
+                ദീപകുമാർ{" "}
+                <a href="tel:9567518155">
+                  <FaPhoneAlt className="m-1" /> 9567518155
+                </a>
+              </p>
             </div>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 14 - 17</h5>
-              <a
-                href={`tel:7592016885`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <a href="tel:7592016885"></a>
+              <p>
+                സ്മിത ശങ്കർ മഠത്തിൽ{" "}
+                <a href="tel:7592016885">
                   <FaPhoneAlt className="m-1" />
                   7592016885
-                </div>
-              </a>
-              <a href="tel:7592016885"></a>
-              <p>സ്മിത ശങ്കർ മഠത്തിൽ - 7592016885</p>
+                </a>{" "}
+              </p>
             </div>
           </div>
         </div>
 
         <h3 className={styles.heading}>ടെലി കൗൺസിലിംഗ്</h3>
-        <div className={`d-flex flex-column ${styles.controlroom}`}>
+        <div
+          className={`d-flex flex-column ${styles.controlroom} ${styles.tele}`}
+        >
           <div className={styles.ctrlroom2}>
             <h4 className={`${styles.heading} text-center text-warning`}>
               ദിശ
@@ -356,8 +334,8 @@ export default function Medical() {
                   04712552056
                 </div>
               </a>
-              <a href="tel:04712552056"></a>
-              <p>04712552056</p>
+              {/* <a href="tel:04712552056"></a>
+              <p>04712552056</p> */}
             </div>
           </div>
 
@@ -375,8 +353,9 @@ export default function Medical() {
                   8086932304
                 </div>
               </a>
-              <a href="tel:8086932304"> </a>
-              <p>8086932304 തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p>
+              {/* <a href="tel:8086932304"> </a> */}
+              {/* <p>8086932304 തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p> */}
+              <p>തിങ്കൾ , ബുധൻ രാവിലെ 10 മുതൽ വൈകീട്ട് 4 വരെ</p>
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@ function Asha({ startIndex, endIndex }) {
 
 export default function AashaWorkers() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="ashaworkers">
       <main className={styles.contactpage}>
         <h3 className={styles.heading}>ആശ വർക്കേഴ്സ്</h3>
         <div className={styles.controlroom}>

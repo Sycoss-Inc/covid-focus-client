@@ -5,7 +5,7 @@ import { wardmembers } from "../components/details";
 function WMember({ startIndex, endIndex }) {
   return wardmembers.slice(startIndex, endIndex).map((r, index) => {
     return (
-      <div className={styles.contactcardA} key={index}>
+      <div className={styles.contactcardA} key={index} id="wardmember">
         <div className={styles.contactspec}>
           <h3>വാർഡ് {startIndex + index + 1}</h3>
           <h3>{r.ward}</h3>
