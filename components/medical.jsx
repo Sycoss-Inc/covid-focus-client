@@ -130,37 +130,37 @@ export default function Medical() {
         <div className={styles.controlroom}>
           <div className={styles.contactdetails}>
             <div className={styles.contactcardA}>
-            <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
-                  <a
-                    href={`tel:9447403903`}
-                    className="text-decoration-none text-light"
-                  >
-                    <div className="m-3">
-                      <FaPhoneAlt className="m-1" />
-                      9447403903
-                    </div>
-                  </a>
-            </div>
-          <div className={styles.contactcardB}>
-                  <h6>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
-                  <a
-                    href={`tel:9847546703`}
-                    className="text-decoration-none text-light"
-                  >
-                    <div className="m-3">
-                      <FaPhoneAlt className="m-1" />
-                      9847546703
-                    </div>
-                  </a>
+              <h6>അനുഗ്രഹ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
+              <a
+                href={`tel:9447403903`}
+                className="text-decoration-none text-light"
+              >
+                <div className="m-3">
+                  <FaPhoneAlt className="m-1" />
+                  9447403903
                 </div>
-        </div>
+              </a>
+            </div>
+            <div className={styles.contactcardB}>
+              <h6>തോംസൺ മെഡിക്കൽസ് - വേലൂർ പോസ്റ്റ് ഓഫിസ്</h6>
+              <a
+                href={`tel:9847546703`}
+                className="text-decoration-none text-light"
+              >
+                <div className="m-3">
+                  <FaPhoneAlt className="m-1" />
+                  9847546703
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         <h3 className={styles.heading}>ലബോറട്ടറികൾ</h3>
         <div className={styles.controlroom}>
           <div className={`row  ${styles.labs}`}>
-          <div className={`col-6 ${styles.ctrlroom1}`}>
-          <div className={` ${styles.contactcardA}`}>
+            <div className={`col-6 ${styles.ctrlroom1}`}>
+              <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
                   <h5>നിസ്ബ (NISBA)</h5>
                   <h6>പന്നിത്തടം</h6>
@@ -197,9 +197,8 @@ export default function Medical() {
                 {/* <p>9633937557</p> */}
                 <p>ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ</p>
               </div>
-              </div>
-              <div className={`col-6 ${styles.ctrlroom2}`}>
-
+            </div>
+            <div className={`col-6 ${styles.ctrlroom2}`}>
               <div className={` ${styles.contactcardA}`}>
                 <div className={styles.contactspec}>
                   <h5>സുധർമ്മ ലാബ്</h5>
@@ -236,55 +235,43 @@ export default function Medical() {
                 {/* <p>9847042905</p> */}
                 <p>RTPCR, ആന്റിജൻ ടെസ്റ്റ് - ഹോം കളക്ഷൻ </p>
               </div>
-              </div>
+            </div>
           </div>
         </div>
 
         <h3 className={styles.heading}>വേലൂർ കുടുംബാരോഗ്യകേന്ദ്രം</h3>
         <div className={styles.controlroom}>
-          <div className={`${styles.ctrlroom1 } ${styles.health}`}>
+          <div className={`${styles.ctrlroom1} ${styles.health}`}>
             <h6 className="text-warning">ജൂനിയർ പബ്ലിക്ക് ഹെൽത്ത് നഴ്സ്</h6>
             <div className={styles.contactcardA}>
               <h5>FWC കിരാലൂർ</h5>
-              <a
-                href={`tel:9495067778`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9495067778
-                </div>
-              </a>
-              <a href="tel:9495067778"></a>
-              <p>സഫിയ കെ - 9495067778</p>
+              <p>
+                സഫിയ കെ{" "}
+                <a href="tel:9495067778">
+                  <FaPhoneAlt className="m-1" /> 9495067778
+                </a>{" "}
+              </p>
             </div>
             <div className={styles.contactcardB}>
               <h5>FWC കുറുമാൽ</h5>
-              <a
-                href={`tel:9744199898`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <p>
+                വീണ ഇ ആർ{" "}
+                <a href="tel:9744199898">
+                  {" "}
                   <FaPhoneAlt className="m-1" />
-                  9744199898
-                </div>
-              </a>
-              <a href="tel:9744199898"></a>
-              <p>വീണ ഇ ആർ - 9744199898</p>
+                  9744199898{" "}
+                </a>
+              </p>
             </div>
             <div className={styles.contactcardA}>
               <h5>FWC വേലൂർ</h5>
-              <a
-                href={`tel:9947865398`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <p>
+                ഗീത{" "}
+                <a href="tel:9947865398">
                   <FaPhoneAlt className="m-1" />
                   9947865398
-                </div>
-              </a>
-              <a href="tel:9947865398"></a>
-              <p>ഗീത - 9947865398</p>
+                </a>{" "}
+              </p>
             </div>
           </div>
 
@@ -292,51 +279,41 @@ export default function Medical() {
             <h6 className="text-warning">ജൂനിയർ ഹെൽത്ത് ഇൻസ്‌പെക്ടർ</h6>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 1 - 6 </h5>
-              <a
-                href={`tel:9995613735`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <p>
+                രാജേഷ്{" "}
+                <a href="tel:9995613735">
                   <FaPhoneAlt className="m-1" />
                   9995613735
-                </div>
-              </a>
-              <a href="tel:9995613735"></a>
-              <p>രാജേഷ് - 9995613735</p>
+                </a>{" "}
+              </p>
             </div>
             <div className={styles.contactcardB}>
               <h5>വാർഡ് 7 - 13</h5>
-              <a
-                href={`tel:9567518155`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
-                  <FaPhoneAlt className="m-1" />
-                  9567518155
-                </div>
-              </a>
-              <a href="tel:9567518155"></a>
-              <p>ദീപകുമാർ - 9567518155</p>
+              <p>
+                ദീപകുമാർ{" "}
+                <a href="tel:9567518155">
+                  <FaPhoneAlt className="m-1" /> 9567518155
+                </a>
+              </p>
             </div>
             <div className={styles.contactcardA}>
               <h5>വാർഡ് 14 - 17</h5>
-              <a
-                href={`tel:7592016885`}
-                className="text-decoration-none text-light"
-              >
-                <div className="m-3">
+              <a href="tel:7592016885"></a>
+              <p>
+                സ്മിത ശങ്കർ മഠത്തിൽ{" "}
+                <a href="tel:7592016885">
                   <FaPhoneAlt className="m-1" />
                   7592016885
-                </div>
-              </a>
-              <a href="tel:7592016885"></a>
-              <p>സ്മിത ശങ്കർ മഠത്തിൽ - 7592016885</p>
+                </a>{" "}
+              </p>
             </div>
           </div>
         </div>
 
         <h3 className={styles.heading}>ടെലി കൗൺസിലിംഗ്</h3>
-        <div className={`d-flex flex-column ${styles.controlroom} ${styles.tele}`}>
+        <div
+          className={`d-flex flex-column ${styles.controlroom} ${styles.tele}`}
+        >
           <div className={styles.ctrlroom2}>
             <h4 className={`${styles.heading} text-center text-warning`}>
               ദിശ
@@ -362,7 +339,7 @@ export default function Medical() {
             </div>
           </div>
 
-          <div className={styles.ctrlroom2} >
+          <div className={styles.ctrlroom2}>
             <h4 className={`text-center text-warning fs-5`}>മനഃശാസ്ത്രജ്ഞർ</h4>
             <div className={styles.contactcardA}>
               <h5>Huda N</h5>
