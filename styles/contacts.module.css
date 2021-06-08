@@ -103,19 +103,18 @@
 .medicals h6 {
   color: #ffcc00;
 }
-.labs h5{
+.labs h5 {
   color: #ffcc00;
 }
-.labs h6{
+.labs h6 {
   color: rgb(145, 255, 209);
 }
-.health p{
+.health p {
   color: rgb(145, 255, 209);
 }
-.tele p{
+.tele p {
   color: red;
 }
-
 
 .controlroom {
   display: flex;
@@ -126,6 +125,7 @@
   width: 70%;
   margin: 1rem auto;
   background-color: #272942;
+  min-width: 370px;
 }
 
 .ctrlroom1 {
@@ -138,7 +138,6 @@
   width: 40%;
   margin: 1rem auto;
 }
-
 
 .contactcardA div {
   color: rgb(253, 230, 127);
