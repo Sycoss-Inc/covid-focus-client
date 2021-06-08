@@ -25,9 +25,7 @@ export default function Contacts() {
         <Slide right duration={1200}>
           <AashaWorkers />
         </Slide>
-        <Slide left duration={1200}>
-          <RRTMembers />
-        </Slide>
+        <RRTMembers />
         <Medical />
       </div>
     </Layout>
