@@ -16,23 +16,47 @@ export default function Navbar({ title }) {
     {
       droptitle: "Contacts",
       dropItems: [
-        { pageName: "Ward Member", route: "#", classname: "WardMember" },
-        { pageName: "Aasha Workers", route: "#", classname: "AashaWorkers" },
-        { pageName: "RRT Members", route: "#", classname: "RRTMembers" },
-        { pageName: "Medical", route: "/Contacts", classname: "Medical" },
+        {
+          pageName: "Ward Member",
+          route: "/Contacts#wardmember",
+          classname: "WardMember",
+        },
+        {
+          pageName: "Aasha Workers",
+          route: "/Contacts#ashaworkers",
+          classname: "AashaWorkers",
+        },
+        {
+          pageName: "RRT Members",
+          route: "/Contacts#rrtmember",
+          classname: "RRTMembers",
+        },
+        {
+          pageName: "Medical",
+          route: "/Contacts#medical",
+          classname: "Medical",
+        },
       ],
     },
     {
       droptitle: "Medical",
       dropItems: [
-        { pageName: "Medical Contacts", route: "#", classname: "Vaccination" },
+        {
+          pageName: "Medical Contacts",
+          route: "/Contacts#medical",
+          classname: "Vaccination",
+        },
         {
           pageName: "Medical Equipments",
           route: "#",
           classname: "MedicalEquipments",
         },
-        { pageName: "Vaccination", route: "#", classname: "Vaccination" },
-        { pageName: "How To", route: "#", classname: "HowTo" },
+        {
+          pageName: "Vaccination",
+          route: "/Covid-Vaccination",
+          classname: "Vaccination",
+        },
+        { pageName: "How To", route: "/howto", classname: "HowTo" },
       ],
     },
     {
@@ -214,18 +238,6 @@ export default function Navbar({ title }) {
               <NavOptions />
               <Dropdown />
             </ul>
-
-            <form className="d-flex search">
-              <input
-                className="form-control me-2 search-bar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn " type="submit">
-                <HiSearch style={{ color: "gray" }} size={30} />
-              </button>
-            </form>
           </div>
         </div>
       </nav>

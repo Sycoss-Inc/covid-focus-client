@@ -42,7 +42,7 @@ function RRT({ startIndex, endIndex }) {
 
 export default function RRTMembers() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="rrtmember">
       <main className={styles.contactpage}>
         <h3 className={styles.heading}>റാപിഡ് റെസ്പോൺസ് ടീം (RRT)</h3>
         <div className={styles.controlroom}>

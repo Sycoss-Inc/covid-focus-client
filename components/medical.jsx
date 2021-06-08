@@ -6,7 +6,7 @@ import HospitalList from "./hospitals";
 
 export default function Medical() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="medical">
       <main className={styles.contactpage}>
         <h4 className={styles.ambulance}>
           ആംബുലൻസ് ലഭിക്കാനും ഈ നമ്പറുകളിലാണ് ബന്ധപ്പെടേണ്ടത്
