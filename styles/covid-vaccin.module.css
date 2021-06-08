@@ -1,0 +1,23 @@
+.vel {
+    text-align: left;
+    margin-left: 0.5 rem;
+}
+.net{
+     text-align: center;
+     padding: 10px;
+     background-color:#A3C6DA;
+     
+}
+.tele{
+    margin-left: 0.5 rem;
+    
+}
+
+.tele img{
+    align-content: center;
+    height: 50px;
+    width: 50px;
+}
+.headin{
+    text-align: center;
+}

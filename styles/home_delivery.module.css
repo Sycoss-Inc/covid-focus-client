@@ -1,0 +1,30 @@
+.para{
+    text-align: center;
+    margin-top: 10vh;
+    color: white;
+    background-color: #272942;
+    width: 80%;
+    height: 40vh;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.25rem;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.link{
+    text-decoration: none;
+    color:#272942 ;
+    margin-left: 15px;
+    
+
+}
