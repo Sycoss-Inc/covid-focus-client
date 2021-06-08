@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { GrDown} from "react-icons/gr";
 import style from "../styles/Collapsible.module.css";
 
 function Collapsible(props) {
@@ -7,8 +8,9 @@ function Collapsible(props) {
   const parentRef = useRef();
   return (
     <div className={style.collapsible}>
-      <button className={style.toggle} onClick={() => setIsOpen(!isOpen)}>
-        {props.lable}
+      <button className={`d-flex justify-content-between rounded-pill align-items-center ${style.toggle}`} onClick={() => setIsOpen(!isOpen)}>
+      <div>{props.lable}</div>
+        <GrDown/>
       </button>
       <div
         className={style.parent}

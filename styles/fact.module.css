@@ -1,8 +1,35 @@
-.heading p {
-  color: unset;
-  font-size: larger;
+.heading{
+  /* color: white; */
+  text-align: center;
+}
+/* .heading p { */
+  /* color: unset; */
+  /* font-size: larger;
+  text-align: left;
+} */
+.heading li {
+  /* color: unset; */
+  /* font-size: larger; */
+  text-align: left;
 }
 .heading h4 {
+  /* color: #ffcc00; */
+  color: darkred;
+  text-align: center;
+}
+.heading h5 {
+  /* color: #ffcc00; */
+  color: darkred;
+  text-align: center;
+}
+.heading h6 {
+  color: darkred;
+  /* color: #ffcc00; */
+  text-align: center;
+}
+.heading h7 {
+  color: white;
+  /* color: #ffcc00; */
   text-align: center;
 }
 .font {
@@ -11,14 +38,17 @@
 
 .videoGrid {
   display: grid;
+  width: 90%;
+  margin: 1rem auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  background-color: rgb(195, 222, 226);
+  /* background-color: rgb(195, 222, 226); */
 }
 
 .videoGrid div {
   text-align: center;
-  background: rgb(159, 206, 238);
+  /* background: rgb(159, 206, 238); */
+  background-color: #272942;
   border-radius: 10px;
 }
 
@@ -37,4 +67,41 @@
 .link {
   padding: 50px;
   text-align: center;
+}
+.heading a{
+  color: rgb(10, 67, 121);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.heading a:hover{
+  color: rgb(87, 17, 153);
+  text-decoration: none;
+}
+.link a{
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link a:hover{
+  color: darkred;
+  text-decoration: none;
+}
+.facts {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+  padding: 2rem;
+  border-radius: 0.8rem;
+  width: 90%;
+  margin: 1rem auto;
+  background: rgb(159, 206, 238); 
+  /* background-color: #272942; */
+  min-width: 370px;
+}
+.tag{
+  margin: 1rem ;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
 }
