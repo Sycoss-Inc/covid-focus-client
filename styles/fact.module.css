@@ -1,0 +1,40 @@
+.heading p {
+  color: unset;
+  font-size: larger;
+}
+.heading h4 {
+  text-align: center;
+}
+.font {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background-color: rgb(195, 222, 226);
+}
+
+.videoGrid div {
+  text-align: center;
+  background: rgb(159, 206, 238);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.link {
+  padding: 50px;
+  text-align: center;
+}
