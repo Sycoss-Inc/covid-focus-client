@@ -7,6 +7,7 @@ import Notice from "../components/Notice";
 
 import Link from "next/link";
 import Noticetrail from "../components/noticetrail";
+import HelpDesk from "../components/help_desk";
 
 export default function Home() {
   return (
@@ -45,7 +46,6 @@ export default function Home() {
             </div>
             <div className={` col-12 col-md-5 ${styles.statsImg}`}></div>
           </div>
-
           <Pass />
         </main>
       </div>

@@ -6,6 +6,7 @@ import Medical from "../components/medical";
 import RRTMembers from "../components/rrtmembers";
 import WardMember from "../components/wardmember";
 import Slide from "react-reveal/Slide";
+import HelpDesk from "../components/help_desk";
 
 export default function Contacts() {
   return (
@@ -19,6 +20,9 @@ export default function Contacts() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
+        <Slide bottom>
+          <HelpDesk />
+        </Slide>
         <Slide left duration={1200}>
           <WardMember />
         </Slide>
