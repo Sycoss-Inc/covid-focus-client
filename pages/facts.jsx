@@ -82,8 +82,9 @@ function Fact() {
 
       <main className={style.heading}>
         <div>
-          <img src="24678.jpg" width="100%" height="1%" />
+          {/* <img src="24678.jpg" width="100%" height="1%" /> */}
           <Collapsible lable="ഒരു വ്യാജ വാർത്ത എങ്ങനെ തിരിച്ചറിയാം ?">
+          <div className={style.facts}>
             <h4>വ്യാജ വാർത്തകൾ പലതരത്തിലുണ്ട്</h4>
             <ul>
               <li>എവിടേലും നടന്ന ഒരു സംഭവം എന്ന രീതിയിൽ പ്രചരിക്കുന്നവ</li>
@@ -115,7 +116,7 @@ function Fact() {
               വ്യാജ വാർത്തകൾ ടെക്സ്റ്റ് രൂപത്തിലും ചിത്രം പോസ്റ്റർ , വീഡിയോ ,
               ഓഡിയോ രൂപത്തിൽ വെബ്സൈറ്റ് രൂപത്തിൽ എല്ലാം ഉണ്ടാവാം
             </li>
-            <h6>Fact check </h6>
+            <h5>Fact check </h5>
             <ul>
               <li>യാഥാർത്ഥ്യം കണ്ടുപിടിക്കാനുള്ള സാധ്യതകൾ</li>
               <li>
@@ -147,7 +148,7 @@ function Fact() {
                 പെർഫോമൻസ് ലഭിക്കുക www.yandex.com എന്ന സർച് എഞ്ചിനിൽ ആണ് .
               </li>
             </ul>
-            <h6>How to check fact-video</h6>
+            <h5>How to check fact-video</h5>
             <a href="https://youtu.be/Z42naG-_4eA" target="_blank">
               https://youtu.be/Z42naG-_4eA
             </a>
@@ -209,14 +210,15 @@ function Fact() {
               *"തെറ്റിദ്ധാരണാജനകമായ ഒരു വാചകത്തിന് മനുഷ്യരെ കൊല്ലാൻ മാത്രം
               മൂർച്ചയുണ്ട് "*
             </h6>
+            </div>
           </Collapsible>
         </div>
-
+        
         <div></div>
 
         <div className={style.videoGrid}>
           {videoGrid.map((grid, i) => (
-            <div key={`Video${i}`}>
+            <div className="d-flex flex-column align-items-center" key={` Video${i}`}>
               <iframe
                 width="300"
                 height="200"
@@ -226,7 +228,7 @@ function Fact() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <h6>{grid.tag}</h6>
+              <h7 className={style.tag}>{grid.tag}</h7>
             </div>
           ))}
         </div>
