@@ -1,66 +1,44 @@
 .carousel {
-  border-radius: 40px;
-  text-align: center;
-}
-
-.prevbutton {
-  width: 4rem;
-  border: none;
-  position: absolute;
-  background-color: transparent;
-  left: 0;
-  border-radius: 50px;
-}
-
-.nextbutton {
-  width: 4rem;
-  border: 0;
-  background-color: transparent;
-  position: absolute;
-  right: 0;
-  border-radius: 50px;
-}
-.cards {
-  text-align: center;
-  height: 100%;
-  position: absolute;
-  background-color: aqua;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.indicators button {
-  border: none;
-  border-radius: 1rem;
-  height: 0.8rem;
-  width: 0.8rem;
-  margin: 1rem 0.4rem;
-  background-color: #243147;
-}
-
-.inner {
-  width: 85vw;
-  min-height: 40vh;
-  background-color: #091221;
-  border-radius: 1.2rem;
-}
-
-.noticetext {
-  margin: 1rem auto;
-  text-align: center;
-  padding: 1rem 4rem;
-  color: white;
-  font-size: 0.95rem;
-}
-
-.noticetext h3 {
-  margin-bottom: 1rem;
+  background-color: rgb(20, 34, 71);
+  border-radius: 2rem;
+  max-width: 80vw;
 }
 
 .item {
-  height: 100%;
-  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.carousel li {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 100%;
+  margin: 0.3rem;
+}
+
+.carousel > a > span {
+  background-color: rgb(48, 78, 119);
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 100%;
+  background-size: 50%;
+}
+
+.carousel > a > span:hover {
+  background-color: rgb(81, 115, 167);
+}
+
+.carousel > a {
+  width: 10%;
+  margin: 5px;
+}
+
+.ariyipp {
+  font-weight: bold;
+  color: rgb(235, 54, 54);
 }
 
 @media screen and (max-width: 768px) {
