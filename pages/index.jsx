@@ -6,6 +6,7 @@ import Rate from "../components/Rate";
 import Notice from "../components/Notice";
 
 import Link from "next/link";
+import Noticetrail from "../components/noticetrail";
 
 export default function Home() {
   return (
