@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
-// import Deliv from "./home_delivery";
+import Deliv from "./home_delivery";
 import style from "../styles/covid-vaccin.module.css";
 
 function Vaccination() {
