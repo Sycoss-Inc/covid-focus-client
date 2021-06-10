@@ -81,13 +81,16 @@
 .toggle-icon {
   background-color: transparent;
   border: none;
+  outline: none;
 }
 .toggle-icon:hover {
   color: #444;
 }
 .toggle-icon:focus {
-  box-shadow: none;
-  border: none;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+
   background-color: transparent;
 }
 .point {
@@ -150,12 +153,17 @@
 }
 .accordion-item {
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .acc-pagename {
-  padding-left: 35px;
-  background-color: #0b2442;
-  color: #818181;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b2442 !important;
+  font-size: 1.2rem !important;
+
+  color: #818181 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
@@ -187,7 +195,7 @@
   padding-bottom: 8px;
 }
 .acc-content .dr-item {
-  font-size: 0.6rem;
+  font-size: 0.3rem !important;
 }
 
 .accordion-flush {

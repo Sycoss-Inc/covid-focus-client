@@ -19,6 +19,9 @@
   height: auto;
   transition: height ease 1s;
 }
+.collapsible:focus {
+  outline: none !important;
+}
 .collapsible .parent {
   height: 0px;
   overflow: hidden;

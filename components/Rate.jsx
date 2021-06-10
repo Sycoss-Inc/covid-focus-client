@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/rates.module.css";
 import AnimatedNumber from "react-animated-numbers";
 
-export default function Rate() {
+export default function Rate({rates}) {
   const [todayCases, setTodayCases] = useState(0);
   const [curedCases, setCuredCases] = useState(0);
   const [deathCases, setDeathCases] = useState(0);
@@ -11,10 +11,10 @@ export default function Rate() {
   function handleIntersection(entries) {
     const pointIsVisible = entries[0].isIntersecting;
     if (pointIsVisible) {
-      setLiveCases(207);
-      setTodayCases(10);
-      setCuredCases(5);
-      setDeathCases(0);
+      setLiveCases(rates["total_cases"]);
+      setTodayCases(rates["positive_rate"]);
+      setCuredCases(rates["recovered"]);
+      setDeathCases(rates["deaths"]);
     } else {
       setLiveCases(0);
       setTodayCases(0);
