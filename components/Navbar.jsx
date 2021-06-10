@@ -48,7 +48,7 @@ export default function Navbar({ title }) {
         },
         {
           pageName: "Medical Equipments",
-          route: "#",
+          route: "/medical-equipments",
           classname: "MedicalEquipments",
         },
         {
@@ -56,15 +56,17 @@ export default function Navbar({ title }) {
           route: "/Covid-Vaccination",
           classname: "Vaccination",
         },
-        { pageName: "How To", route: "/howto", classname: "HowTo" },
       ],
     },
     {
       droptitle: "More",
       dropItems: [
-        { pageName: "Home Delivery", route: "#", classname: "HomeDelivery" },
-        { pageName: "Fact Check", route: "#", classname: "FactCheck" },
-        { pageName: "Alerts", route: "#", classname: "Alerts" },
+        {
+          pageName: "Home Delivery",
+          route: "/home_delivery",
+          classname: "HomeDelivery",
+        },
+        { pageName: "Fact Check", route: "/facts", classname: "FactCheck" },
       ],
     },
   ];
@@ -229,8 +231,8 @@ export default function Navbar({ title }) {
     <>
       <nav className="navbar fixed-top navbar-expand-md d-none d-sm-none d-md-block  ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            PSYCHOS
+          <a className="navbar-brand" href="/">
+            CF
           </a>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

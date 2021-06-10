@@ -1,0 +1,23 @@
+.sectn {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(235, 248, 120);
+}
+.sectn a {
+  color: rgb(36, 30, 98);
+  display: inline;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  font-weight: bold;
+}
+.heading {
+  font-weight: bold;
+  padding: 1rem;
+  background-color: rgb(79, 224, 115);
+}
+.main {
+  margin: 2rem;
+  max-width: 80vw;
+  margin: 1rem auto;
+}

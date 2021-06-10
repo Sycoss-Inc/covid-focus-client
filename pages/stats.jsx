@@ -112,7 +112,7 @@ function Stats() {
           </h3>
           <div className={`container col-12 col-xs-12 ${style.carousel}`}>
             <Carousel
-              className={`${style.car}`}
+              className={`${style.carousel}`}
               nextLabel="false"
               prevLabel="false"
             >

@@ -1,40 +1,68 @@
 .body {
-    background-color: lightblue;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  background-color: lightblue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.listItem{
-    padding: 1.5rem 0 1.5rem 0;
-    align-items: left;
-    color:black;
-    text-align: left;
+.listItem {
+  padding: 1.5rem 0 1.5rem 0;
+  align-items: left;
+  color: black;
+  text-align: left;
 }
 
-.buttonTitle{
-    padding : 1.8rem 1.5rem 1.8rem 1.5rem;
-    height: 6rem;
-    background-color: #091d35;
-    color: white;
+.buttonTitle {
+  padding: 1.8rem 1.5rem 1.8rem 1.5rem;
+  height: 6rem;
+  background-color: #091d35;
+  color: white;
 }
 
-.heading{
-    height: 20vw;
-    width: 20vw;
-    margin: 20px auto 20px auto;
-    text-align: center;
-    align-items: center;
-    padding: 1.8rem 1.5rem 1.8rem 1.5rem;
-    background-color: #091d35;
-    border-radius: 50%;
-    display: flex;
-
-    
+.heading {
+  height: 20vw;
+  width: 20vw;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  align-items: center;
+  padding: 1.8rem 1.5rem 1.8rem 1.5rem;
+  background-color: #091d35;
+  border-radius: 50%;
+  display: flex;
 }
 
 .titlepara {
-    color: white;
-    font-size: larger;
-    margin: auto;
+  color: white;
+  font-size: larger;
+  margin: auto;
+}
+
+.buttonTitle a {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(176, 255, 229);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  line-height: 2rem;
+}
+
+.buttonTitle a:hover {
+  background-color: rgb(115, 243, 200);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 886px) {
+  .heading {
+    border-radius: 3rem;
+    padding: 2rem 1rem;
+    height: auto;
+    width: auto;
+  }
+  .titlepara {
+    margin: 1rem;
+  }
 }

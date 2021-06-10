@@ -47,8 +47,8 @@ export default function Rate({rates}) {
                     <AnimatedNumber
                       fontStyle={{ fontFamily: "Nunito", fontSize: "4rem",color:"rgb(223, 134, 19)" }}
                       animateToNumber={liveCases}
-                      config={{ tension: 89, friction: 40 }}
-                      animationType={"calm"}
+                      config={{ tension: 89, friction: 30 }}
+                      animationType={"random"}
                     />
                   </div>
 

@@ -14,6 +14,7 @@
   border: none;
   color: rgb(155, 155, 155);
   font-size: 1.25rem;
+  text-align: start;
 }
 
 .linkbutton:hover,
@@ -156,6 +157,7 @@
   font-size: 1.3rem;
 }
 .acc-pagename {
+
   margin-left: 15px;
   margin-right: 15px;
   display: flex;
@@ -164,20 +166,21 @@
   font-size: 1.2rem !important;
 
   color: #818181 !important;
+
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
   border-radius: 0;
   border-radius: 0%;
-  font-size: 1.1rem;
+  font-size: 1.2rem !important;
 }
 
 .accordion-button:after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23818181'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 .accordion-button:not(.collapsed) {
-  color: white;
-  background-color: #091d35;
+  color: white !important;
+  background-color: #091d35 !important;
 }
 .accordian-button-active {
   background: black !important;
@@ -187,7 +190,7 @@
 }
 .acc-content {
   padding-top: 0.6rem;
-  background-color: rgb(30, 60, 95) !important;
+  background-color: rgb(24, 40, 75) !important;
 }
 .acc-content a {
   color: #ffebcbec !important;
@@ -206,7 +209,11 @@
   color: white;
 }
 
-@media only screen and (min-width: 560px) {
+.acc-pagename {
+  color: rgb(230, 230, 230);
+}
+
+ @media only screen and (min-width: 560px) {
   .sidebar.active {
     width: 30vw;
   }
