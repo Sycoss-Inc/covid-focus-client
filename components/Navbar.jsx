@@ -17,6 +17,11 @@ export default function Navbar({ title }) {
       droptitle: "Contacts",
       dropItems: [
         {
+          pageName: "Help Desk",
+          route: "/Contacts#help_desk",
+          classname: "HelpDesk",
+        },
+        {
           pageName: "Ward Member",
           route: "/Contacts#wardmember",
           classname: "WardMember",

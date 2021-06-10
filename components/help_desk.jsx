@@ -4,7 +4,7 @@ import style from "../styles/helpdesk.module.css";
 
 export default function HelpDesk() {
   return (
-    <div className="text-center">
+    <div className="text-center" id="help_desk">
       <h4 className={`${style.heading}`}>
         വേലൂർ ഗ്രാമ പഞ്ചായത്ത് ഹെല്പ് ഡെസ്ക്
       </h4>
