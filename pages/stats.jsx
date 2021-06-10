@@ -31,7 +31,7 @@ function Stats() {
         <div className={`col-11 col-sm-10 col-md-8 col-lg-7 ${style.pie}`}>
           <PieChart />
         </div>
-        <div className="row justify-content-evenly mx-1">
+        <div className="row justify-content-evenly mx-1 align-items-center">
           {[
             { label: "Total Active Cases", data: activeData },
             { label: "Positivity Rate", data: positivityRate },
@@ -39,7 +39,7 @@ function Stats() {
             { label: "Total Negetive Cases", data: negativeData },
           ].map((data, index) => {
             return (
-              <div className={`col-11 col-md-6 text-center`} key={index}>
+              <div className={`col-12 col-md-6 text-center`} key={index}>
                 <h3>{data.label}</h3>
                 <div className={`${style.chart}`}>
                   <Line
@@ -113,8 +113,8 @@ function Stats() {
           <div className={`container col-12 col-xs-12 ${style.carousel}`}>
             <Carousel
               className={`${style.car}`}
-              nextLabel="false"
-              prevLabel="false"
+              nextLabel={false}
+              prevLabel={false}
             >
               {wardWiseCases.map((ward, index) => {
                 return (
@@ -122,9 +122,9 @@ function Stats() {
                     <div
                       key={index}
                       style={{
-                        width: "80%",
-                        margin: "1rem auto",
-                        marginBottom: "3rem",
+                        width: "90%",
+                        margin: "0.6rem auto",
+                        marginBottom: "2rem",
                       }}
                     >
                       <Line

@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import style from "../styles/home_delivery.module.css";
+import Link from "next/link";
 
 function Deliv() {
   return (
@@ -17,11 +18,11 @@ function Deliv() {
           വേണ്ടി താങ്കളുടെ വാർഡിലെ RRT അംഗത്തെ ബന്ധപ്പെടുക
         </p>
         <br />
-        <p className={style.para2}>
-          താങ്കളുടെ വാർഡിലെ RRT അംഗങ്ങളുടെ വിവരങ്ങൾ അറിയാൻ
-          <a href="" className={style.link}>
-            ഇവിടെ ക്ലിക്ക് ചെയ്യുക
-          </a>
+        <p className="col" className={style.para2}>
+          <p>താങ്കളുടെ വാർഡിലെ RRT അംഗങ്ങളുടെ വിവരങ്ങൾ അറിയാൻ</p>
+          <Link className="col-10 col-sm-8" href="/Contacts#rrtmember">
+            <a className={style.link}>ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
+          </Link>
         </p>
       </main>
     </Layout>
