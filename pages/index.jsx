@@ -3,11 +3,10 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Pass from "../components/Pass";
 import Rate from "../components/Rate";
-
+import HelpDesk from "../components/help_desk";
 
 import Link from "next/link";
 import Noticetrail from "../components/noticetrail";
-
 
 export default function Home({ rates, notices }) {
   return (
@@ -25,8 +24,7 @@ export default function Home({ rates, notices }) {
         <main className={styles.main}>
           <Rate rates={rates} />
 
-     
-          <Noticetrail  notices={notices}/>
+          <Noticetrail notices={notices} />
           <div className={`row ${styles.stats}`}>
             {" "}
             <div className={`col-12 col-md-7 ${styles.statQues}`}>
@@ -47,7 +45,7 @@ export default function Home({ rates, notices }) {
             </div>
             <div className={` col-12 col-md-5 ${styles.statsImg}`}></div>
           </div>
-
+          <HelpDesk />
           <Pass />
         </main>
       </div>
@@ -61,14 +59,14 @@ export async function getStaticProps() {
   const rates = await res.json();
 
   const response = await fetch(
-    "https://jsonplaceholder.typicode.com/users"
+    "https://covid-focus-sycoss.herokuapp.com/client/notices?panchayat=veloor_panchayat&record=3"
   );
   const notices = await response.json();
 
   return {
     props: {
       rates: rates.message[0],
-      notices: notices,
+      notices: notices.message,
     },
   };
 }
