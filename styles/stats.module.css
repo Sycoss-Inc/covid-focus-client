@@ -11,7 +11,8 @@
   background-color: rgb(255, 255, 255);
 }
 
-.carousel {
+.carousel { 
+   z-index:0;
   width: 80%;
   text-align: center;
   margin: 2rem auto;
@@ -20,7 +21,8 @@
   border-radius: 2rem;
 }
 
-.car li {
+.carousel li {
+ 
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 100%;

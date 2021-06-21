@@ -3,13 +3,12 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Pass from "../components/Pass";
 import Rate from "../components/Rate";
-import Notice from "../components/Notice";
+import HelpDesk from "../components/help_desk";
 
 import Link from "next/link";
 import Noticetrail from "../components/noticetrail";
-import HelpDesk from "../components/help_desk";
 
-export default function Home() {
+export default function Home({ rates, notices }) {
   return (
     <Layout title="Dashboard">
       <div className="container-fluid">
@@ -23,9 +22,9 @@ export default function Home() {
         </Head>
 
         <main className={styles.main}>
-          <Rate />
+          <Rate rates={rates} />
 
-          <Notice />
+          <Noticetrail notices={notices} />
           <div className={`row ${styles.stats}`}>
             {" "}
             <div className={`col-12 col-md-7 ${styles.statQues}`}>
@@ -52,4 +51,22 @@ export default function Home() {
       </div>
     </Layout>
   );
+}
+export async function getStaticProps() {
+  const res = await fetch(
+    "https://covid-focus-sycoss.herokuapp.com/client/panchayat?panchayat=veloor_panchayat&records=1"
+  );
+  const rates = await res.json();
+
+  const response = await fetch(
+    "https://covid-focus-sycoss.herokuapp.com/client/notices?panchayat=veloor_panchayat&record=3"
+  );
+  const notices = await response.json();
+
+  return {
+    props: {
+      rates: rates.message[0],
+      notices: notices.message,
+    },
+  };
 }

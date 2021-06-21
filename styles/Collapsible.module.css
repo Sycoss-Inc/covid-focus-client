@@ -12,7 +12,7 @@
   width: 90%;
   margin: 1rem auto;
   background-color: rgb(231, 221, 129);
-  padding:  1rem;
+  padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -25,6 +25,9 @@
   margin-bottom: 00.5rem;
   height: auto;
   transition: height ease 1s;
+}
+.toggle:focus {
+  outline: none !important;
 }
 .collapsible .parent {
   height: 0px;

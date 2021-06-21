@@ -67,17 +67,18 @@ function Vaccination() {
           </ul>
         </div>
 
-        <div
-          className={`${style.table} d-flex justify-content-evenly align-items-center`}
+        <div 
+          className={`${style.table} row`}
         >
-          <div>
+          <div className={`col-12 col-md-6 `}>
             <img
+            className={style.coImg}
               src="https://prod-cdn.preprod.co-vin.in/assets/images/covid19logo.jpg"
               alt="COWIN_LOGO"
             />
           </div>
           <div
-            className={`${style.register} p-3 rounded-3 text-light fs-4 d-inline`}
+            className={`${style.register} p-3 rounded-3 text-light fs-4 col-12 col-md-6`}
           >
             <div className="text-center">
               COWIN പോർട്ടലിൽ രജിസ്റ്റർ ചെയ്യൂ <br />

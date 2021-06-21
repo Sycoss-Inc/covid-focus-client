@@ -16,7 +16,7 @@ export default function HelpDesk() {
           src="/helpdesk.jpg"
           alt="help desk"
         />
-        <section className={`${style.sectn} col-8 col-sm-5 col-md-6 col-lg-5`}>
+        <section className={`${style.sectn}  col-sm-8 col-md-6 col-lg-5`}>
           <section>
             <a href="tel:04885285431">
               <FaPhoneAlt className="m-2" />
