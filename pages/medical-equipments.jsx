@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import style from "../styles/emergency.module.css";
 import howto from "../styles/howto.module.css";
 import { Accordion } from "react-bootstrap";
-import { nodeName } from "jquery";
 import MedicalEquipments from "../components/medicalEquipments";
 
 function HowTo() {
