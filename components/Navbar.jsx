@@ -237,7 +237,7 @@ export default function Navbar({ title }) {
       <nav className="navbar fixed-top navbar-expand-md d-none d-sm-none d-md-block  ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            PSYCHOS
+            FOCUS
           </a>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

@@ -46,6 +46,7 @@ export default function Home() {
             </div>
             <div className={` col-12 col-md-5 ${styles.statsImg}`}></div>
           </div>
+          <HelpDesk />
           <Pass />
         </main>
       </div>
