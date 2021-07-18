@@ -16,7 +16,7 @@
     ),
     #293952;
   color: #c4c4c4;
-
+  position: relative;
   font-weight: bold;
   display: grid;
   row-gap: 4px;
@@ -40,4 +40,21 @@
   left: 51vw;
   height: 45vw;
   width: 45vw;
+}
+
+.more {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.more a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(190, 190, 190);
+  line-height: 1rem;
+}
+
+.more p {
+  margin: 9px;
 }

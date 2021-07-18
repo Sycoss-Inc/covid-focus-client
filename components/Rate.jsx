@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/rates.module.css";
 import AnimatedNumber from "react-animated-numbers";
 
-export default function Rate({rates}) {
+export default function Rate({ rates }) {
   const [todayCases, setTodayCases] = useState(0);
   const [curedCases, setCuredCases] = useState(0);
   const [deathCases, setDeathCases] = useState(0);
@@ -36,58 +36,91 @@ export default function Rate({rates}) {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid" id="rates">
         <div className={`row  ${styles.rates}`}>
           <div className={`col-12 col-md-6  ${styles.vector}`}></div>
           <div className="col-12 col-md-6 ">
             <div className="row ">
-              <div className={`col-12 col-md-4 offset-md-1 ${styles.rateCardA}`}>
+              <div
+                className={`col-12 col-md-4 offset-md-1 ${styles.rateCardA}`}
+              >
                 <div className="row">
                   <div className="col-12 d-flex justify-content-center  ">
                     <AnimatedNumber
-                      fontStyle={{ fontFamily: "Nunito", fontSize: "4rem",color:"rgb(223, 134, 19)" }}
+                      fontStyle={{
+                        fontFamily: "Nunito",
+                        fontSize: "4rem",
+                        color: "rgb(223, 134, 19)",
+                      }}
                       animateToNumber={liveCases}
                       config={{ tension: 89, friction: 30 }}
                       animationType={"random"}
                     />
                   </div>
 
-                  <div className="d-flex justify-content-center text-align-center"> ആകെ കോവിഡ് ബാധിതർ</div>
+                  <div className="d-flex justify-content-center text-align-center">
+                    {" "}
+                    ആകെ കോവിഡ് ബാധിതർ
+                  </div>
                 </div>
               </div>
-              <div className={`col-12 col-md-4 offset-md-1 ${styles.rateCardB}`}>
+              <div
+                className={`col-12 col-md-4 offset-md-1 ${styles.rateCardB}`}
+              >
                 <div className="row">
                   <div className="col-12 d-flex justify-content-center ">
                     <AnimatedNumber
-                      fontStyle={{ fontFamily: "Nunito", fontSize: "4.5rem",color:"rgb(36, 75, 134)" }}
+                      fontStyle={{
+                        fontFamily: "Nunito",
+                        fontSize: "4.5rem",
+                        color: "rgb(36, 75, 134)",
+                      }}
                       animateToNumber={todayCases}
                       config={{ tension: 89, friction: 40 }}
                       animationType={"calm"}
                     />
                   </div>
-                  <div className="d-flex justify-content-center"> ഇന്ന് രോഗബാധിതർ </div>
+                  <div className="d-flex justify-content-center">
+                    {" "}
+                    ഇന്ന് രോഗബാധിതർ{" "}
+                  </div>
                 </div>
               </div>
             </div>
             <div className="row mt-3">
-              <div className={`col-12 col-md-4 offset-md-1 ${styles.rateCardC}`}>
+              <div
+                className={`col-12 col-md-4 offset-md-1 ${styles.rateCardC}`}
+              >
                 <div className="row">
                   <div className="col-12 d-flex justify-content-center ">
                     <AnimatedNumber
-                      fontStyle={{ fontFamily: "Nunito", fontSize: "4.5rem",color:"green" }}
+                      fontStyle={{
+                        fontFamily: "Nunito",
+                        fontSize: "4.5rem",
+                        color: "green",
+                      }}
                       animateToNumber={curedCases}
                       config={{ tension: 89, friction: 40 }}
                       animationType={"calm"}
                     />
                   </div>
-                  <div className="d-flex justify-content-center"> ഇന്ന് രോഗമുക്തി</div>
+                  <div className="d-flex justify-content-center">
+                    {" "}
+                    ഇന്ന് രോഗമുക്തി
+                  </div>
                 </div>
               </div>
-              <div className={`col-12 col-md-4 offset-md-1  ${styles.rateCardD}`}>
+              <div
+                className={`col-12 col-md-4 offset-md-1  ${styles.rateCardD}`}
+              >
                 <div className="row">
                   <div className="col-12 d-flex justify-content-center ">
                     <AnimatedNumber
-                      fontStyle={{ fontFamily: "Nunito", fontSize: "4.5rem",color:"red" }}
+                      fontStyle={{
+                        fontFamily: "Nunito",
+                        fontSize: "4.5rem",
+                        color: "red",
+                      }}
                       animateToNumber={deathCases}
                       config={{ tension: 89, friction: 40 }}
                       animationType={"calm"}
